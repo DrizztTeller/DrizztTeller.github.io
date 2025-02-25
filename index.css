@@ -123,6 +123,7 @@ body {
 @supports (-webkit-touch-callout: none) {
   #root {
     height: -webkit-fill-available;
+    background-color: #ee1400;
   }
 }
 
