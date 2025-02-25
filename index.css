@@ -1,4 +1,5 @@
 picture {
+  display: block;
   width: 10rem;
   height: 10rem;
 }
