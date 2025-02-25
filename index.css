@@ -595,6 +595,7 @@ small {
 @media screen and /* (1440px <= width) */ (min-width: 850px) {
   #Header {
     padding: 1rem 6.4rem;
+    background-color: rgb(187, 75, 75);
 
     .header__btn-burger {
       display: none;
