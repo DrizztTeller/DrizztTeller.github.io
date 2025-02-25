@@ -1,4 +1,7 @@
-
+picture {
+  width: 10rem;
+  height: 10rem;
+}
 /* ************************* HEADER ************************* */
 #Header {
   width: 100%;
