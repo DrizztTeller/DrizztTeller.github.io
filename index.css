@@ -523,11 +523,11 @@ small {
   }
 }
 
-@supports (-webkit-touch-callout: none) {
+/* @supports (-webkit-touch-callout: none) {
   .header__nav {
     height: -webkit-fill-available;
   }
-}
+} */
 
 @keyframes stickyNav {
   100% {
@@ -536,7 +536,7 @@ small {
 }
 
 /* Media queries for Tablet */
-@media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
+@media screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
   #Header {
     height: 10rem;
     padding: 1rem 3.2rem;
@@ -592,7 +592,7 @@ small {
 }
 
 /* Media queries for Desktop */
-@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+@media screen and /* (1440px <= width) */ (min-width: 850px) {
   #Header {
     padding: 1rem 6.4rem;
 
@@ -687,7 +687,7 @@ small {
   }
 }
 
-@media only screen and /* (1440px <= width) */ (min-width: 1440px) {
+@media screen and /* (1440px <= width) */ (min-width: 1440px) {
   #Header {
     .header__nav {
       .header__nav__ul {
