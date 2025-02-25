@@ -116,13 +116,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #00ff00;
 }
 
 @supports (-webkit-touch-callout: none) {
   #root {
     height: -webkit-fill-available;
-    background-color: #ee1400;
   }
 }
 
@@ -134,7 +132,6 @@ article,
 .cards,
 .cards-aside {
   container-type: inline-size;
-  background-color: orange;
 }
 
 .open {
