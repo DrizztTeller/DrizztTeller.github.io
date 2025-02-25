@@ -135,6 +135,7 @@ article,
 .cards,
 .cards-aside {
   container-type: inline-size;
+  background-color: orange;
 }
 
 .open {
