@@ -157,6 +157,7 @@ a:hover {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  color: var(--white1);
 }
 
 a:active,
