@@ -4,46 +4,46 @@ RESET
 
 @font-face {
   font-family: "Novecento";
-  src: url("public/fonts/NovecentoNormal.ttf") format("truetype"),
-    url("public/fonts/NovecentoNormal.otf") format("opentype");
+  src: url("./public/fonts/NovecentoNormal.ttf") format("truetype"),
+    url("./public/fonts/NovecentoNormal.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Novecento Bold";
-  src: url("public/fonts/NovecentoBold.ttf") format("truetype"),
-    url("public/fonts/NovecentoBold.otf") format("opentype");
+  src: url("./public/fonts/NovecentoBold.ttf") format("truetype"),
+    url("./public/fonts/NovecentoBold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Source Sans Pro Light";
-  src: url("public/fonts/SourceSansPro-Light.otf") format("opentype");
+  src: url("./public/fonts/SourceSansPro-Light.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Source Sans Pro Light Italic";
-  src: url("public/fonts/SourceSansPro-LightIt.otf") format("opentype");
+  src: url("./public/fonts/SourceSansPro-LightIt.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Source Sans Pro Regular";
-  src: url("public/fonts/SourceSansPro-Regular.otf") format("opentype");
+  src: url("./public/fonts/SourceSansPro-Regular.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Source Sans Pro Bold";
-  src: url("public/fonts/SourceSansPro-Bold.otf") format("opentype");
+  src: url("./public/fonts/SourceSansPro-Bold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Source Sans Pro Bold Italic";
-  src: url("public/fonts/SourceSansPro-BoldIt.otf") format("opentype");
+  src: url("./public/fonts/SourceSansPro-BoldIt.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
@@ -73,13 +73,6 @@ RESET
   --primaryBlue: #25a1b0;
   --primaryBlueHover: #8dcbd3;
   --secondaryBlue: #003853;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --body: #333333;
-    --text: #faf9f6;
-  }
 }
 
 /* ------------ BODY -------------- */
