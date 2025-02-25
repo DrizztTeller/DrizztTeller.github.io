@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /error404
+Sitemap: https://www.re-events.org/sitemap.xml

@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <title>Re.Events | Data analysis to reach operational efficiency</title>
+    <meta
+      name="description"
+      content="Empower sports event organizations to make data-driven decisions, analyze data from past and identify optimization opportunities for future editions."
+    />
+    <meta
+      name="keywords"
+      content="events, data, Re.Events, analysis, planning, organization, optimization, readiness, monitoring, IOC, C3, olympic games, sport, Paris 2024, Communication, Command and Control"
+    />
+    <meta name="author" content="Re.Events" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      property="og:title"
+      content="Re.Events | Data analysis to reach operational efficiency"
+    />
+    <meta
+      property="og:description"
+      content="Explore Re.Events, the expert in event analysis and optimization powered by data."
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://www.re-events.org/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="public/images/team1.webp" />
+
+    <link rel="canonical" href="https://www.re-events.org/" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="public/images/icons/Favicon.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="public/images/icons/favicon16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="public/images/icons/favicon32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="public/images/icons/favicon.svg"
+    />
+    <link rel="shortcut icon" href="public/images/icons/Favicon.ico" />
+    <link rel="apple-touch-icon" href="public/images/icons/faviconApple.png" />
+    <meta name="apple-mobile-web-app-title" content="Re.Events" />
+
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <section
+        class="Toastify"
+        aria-live="polite"
+        aria-atomic="false"
+        aria-relevant="additions text"
+        aria-label="Notifications Alt+T"
+      ></section>
+      <header id="Header">
+        <button
+          class="header__btn"
+          aria-label="Go to the top of the Home page"
+          data-section="Hero"
+          id="homeButton"
+        >
+          <figure class="header__btn__figure-img">
+            <img
+              src="./public/images/icons/LogoT80.webp"
+              alt="Logo Re.Events"
+              class="header__btn__figure__logo"
+            />
+          </figure>
+        </button>
+        <button
+          id="menuToggle"
+          class="header__btn-burger"
+          aria-expanded="false"
+          aria-label="Open navigation menu"
+          aria-controls="navMenu"
+        >
+          <div id="burger" class="header__btn-burger__div-burger"></div>
+        </button>
+        <nav id="navMenu" class="header__nav bold">
+          <ul class="header__nav__ul">
+            <li class="header__nav__ul__li">
+              <button
+                class="header__nav__ul__li__btn-link"
+                aria-label="Go to section Solutions"
+                data-section="Solutions"
+              >
+                Solutions
+              </button>
+            </li>
+            <li class="header__nav__ul__li">
+              <button
+                class="header__nav__ul__li__btn-link"
+                aria-label="Go to section About us"
+                data-section="AboutUs"
+              >
+                About us
+              </button>
+            </li>
+            <li class="header__nav__ul__li">
+              <button
+                class="header__nav__ul__li__btn-link"
+                aria-label="Go to section Success Stories"
+                data-section="SuccessStories"
+              >
+                Success Stories
+              </button>
+            </li>
+            <li class="header__nav__ul__li">
+              <button
+                class="header__nav__ul__li__btn-link"
+                aria-label="Go to section Contact"
+                data-section="Contact"
+              >
+                Contact
+              </button>
+            </li>
+            <li class="header__nav__ul__li">
+              <a
+                href="https://www.linkedin.com/company/re-events-org/"
+                class="header__nav__ul__li__a"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Follow us on LinkedIn"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="linkedin"
+                  class="svg-inline--fa fa-linkedin header__nav__ul__li__a__icon"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__div-scroll"></div>
+      </header>
+      <article id="Home">
+        <section id="Hero">
+          <div class="hero__div-container">
+            <div class="hero__div-mask-border"></div>
+            <div class="hero__div-c__div-mask">
+              <div class="hero__div-c__div-mask__div-img">
+                <div class="hero__div-c__div-mask__div-img__div-text">
+                  <h1 class="hero__div-c__div-mask__div-img__div-text__h1">
+                    Re.Events
+                  </h1>
+                  <div
+                    class="hero__div-c__div-mask__div-img__div-text__div-h5-container"
+                  >
+                    <h5
+                      class="hero__div-c__div-mask__div-img__div-text__div__h5"
+                    >
+                      Helping Sports Event Organizations Analyze and Leverage
+                      Their Data to reach Operational Excellence, Cost
+                      Optimization, And Carbon impact reduction
+                    </h5>
+                  </div>
+                  <a
+                    href="#Contact"
+                    class="btn"
+                    aria-label="Go to the Contact section"
+                    >Contact us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__div-c__div-mask__div-img img"></div>
+        </section>
+        <section id="Solutions">
+          <h2>
+            Turning Data into Actionable Power: Insight, Synergy, and Efficiency
+          </h2>
+          <div class="solutions-container">
+            <ul class="solutions-list">
+              <li>
+                <div class="circle"></div>
+                <div>
+                  <h3>ANALYZE YOUR EVENT</h3>
+                  <p>
+                    Leverage your historical data and our expertise to move
+                    closer to operational efficiency in planning your future
+                    events.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <div>
+                  <h3>STREAMLINE YOUR PROCESSES</h3>
+                  <p>
+                    Maximize inter departments collaboration and ensure smooth
+                    dependencies between planning processes with efficient data
+                    sharing.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <div>
+                  <h3>PREPARE YOUR TEAM</h3>
+                  <p>
+                    Run more realistic readiness exercises within your
+                    organization thanks to simulated data and data driven
+                    scenarios.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <div>
+                  <h3>MONITOR YOUR OPERATIONS</h3>
+                  <p>
+                    Ensure everything runs smoothly, swiftly spot issues as they
+                    emerge and support efficient data driven decision making.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="circle"></div>
+                <div>
+                  <h3>COLLECT YOUR DATA</h3>
+                  <p>
+                    Regain control of your data by reclaiming it from your event
+                    delivery partners at the end of your event and structure it.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="Solutions2">
+            <div class="solutions__div-cards-container">
+              <div class="solutions__div-cC__div-cards">
+                <div class="CardSolution2 card-0">
+                  <div class="CardSolution__div-text">
+                    <h3 class="CardSolution__div-text__h3 false">
+                      Analyze your event
+                    </h3>
+                    <div class="CardSolution__div-text__div">
+                      <div class="CardSolution__div-text__div__div-analyze">
+                        <ul
+                          class="CardSolution__div-text__div__div-analyze__ul"
+                        >
+                          <li
+                            class="CardSolution__div-text__div__div-analyze__ul__li"
+                          >
+                            Explore data from past editions to assess actual
+                            usage of resources deployed :
+                          </li>
+                          <li
+                            class="CardSolution__div-text__div__div-analyze__ul__li"
+                          >
+                            <span class="bullet"></span>
+                            Among all the food prepared, how much was actually
+                            consumed ?
+                          </li>
+                          <li
+                            class="CardSolution__div-text__div__div-analyze__ul__li"
+                          >
+                            <span class="bullet"></span>How many workforce
+                            members were effectively engaged during peak times
+                          </li>
+                          <li
+                            class="CardSolution__div-text__div__div-analyze__ul__li"
+                          >
+                            <span class="bullet"></span>How often were the buses
+                            operating at full capacity, and how many trips were
+                            made with only partial occupancy ?
+                          </li>
+                          <li
+                            class="CardSolution__div-text__div__div-analyze__ul__li"
+                          >
+                            <span class="bullet"></span>Did the layout and size
+                            of the spaces align with attendee behavior and
+                            movement patterns ?
+                          </li>
+                          <li
+                            class="CardSolution__div-text__div__div-analyze__ul__li"
+                          >
+                            <span class="bullet"></span>How many seats
+                            designated for guests were actually occupied ?
+                          </li>
+                        </ul>
+                        <ul
+                          class="CardSolution__div-text__div__div-analyze__ul"
+                        >
+                          <li
+                            class="CardSolution__div-text__div__div-analyze__ul__li"
+                          >
+                            Test alternative planning scenarios, evaluating
+                            their impact on costs and experience using past
+                            event data:
+                          </li>
+                          <li
+                            class="CardSolution__div-text__div__div-analyze__ul__li"
+                          >
+                            <span class="bullet"></span>By reducing bus
+                            frequency from 15 minutes to 10 minutes : how many
+                            buses can be saved and how many people can be
+                            carried while ensuring a 20min max waiting time ?
+                          </li>
+                          <li
+                            class="CardSolution__div-text__div__div-analyze__ul__li"
+                          >
+                            <span class="bullet"></span>By limiting the number
+                            of guest for the finals, what would be the projected
+                            cost savings across all services, including
+                            transportation, catering, energy consumption, and
+                            logistics?
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="CardSolution2 CardSolutionType2 card-1">
+                  <div class="CardSolution__div-text">
+                    <h3 class="CardSolution__div-text__h3 h3Type2">
+                      Streamline your processes
+                    </h3>
+                    <div class="CardSolution__div-text__div">
+                      <p class="CardSolution__div-text__div__p">
+                        Provide tools and process to
+                        <strong
+                          >maximize inter departments collaboration</strong
+                        >
+                        and ensure efficient inter dependencies between planning
+                        processes. <br />The Venue Population Model process is
+                        one of the key planning process for every event
+                        organization. It helps service provider teams nail the
+                        numbers and define the resources : buses, meals,
+                        security staff, tech gear, and more, by answering the
+                        big three : <br /><br />
+                        <span class="CardSolution__div-text__div__p__span"
+                          >KEY PROCESS : DEFINE WHO, WHEN, WHERE</span
+                        >
+                        <br />
+                        Predicting the movements of groups like journalists,
+                        photographers, and guests can be particularly
+                        challenging but that’s where client owners role is
+                        crucial. Their insights are the secret sauce, and when
+                        shared seamlessly, they unlock next-level operational
+                        efficiency. Re.Events toolbox contains a dedicated tool
+                        to smoothly share, update, control and visualize those
+                        numbers.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="CardSolution2 card-2">
+                  <div class="CardSolution__div-text">
+                    <h3 class="CardSolution__div-text__h3 false">
+                      Prepare your team
+                    </h3>
+                    <div class="CardSolution__div-text__div">
+                      <ul class="CardSolution__div-text__div__ul-P-M">
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          For one-time events, there’s
+                          <strong>no room for error on the big day</strong>.
+                          That’s why readiness is non-negotiable. The
+                          <strong>more realistic the simulations</strong>, the
+                          <strong>better the team can prepare</strong>, refine
+                          processes, and stress-test their tools.<br />Re.Events
+                          propose tools and scenarii to
+                          <strong>support</strong> executives and cross
+                          institutions <strong>readiness exercises</strong> like
+                          :
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>Real-time competition
+                          schedule and weather issues
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>Real-time spectator
+                          attendance and transport issues
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>Overall games attendance
+                          and epidemic disease spread
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>Team travel schedules and
+                          plane hijacking
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>And much more...
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="CardSolution2 CardSolutionType2 card-3">
+                  <div class="CardSolution__div-text">
+                    <h3 class="CardSolution__div-text__h3 h3Type2">
+                      Monitor your operations
+                    </h3>
+                    <div class="CardSolution__div-text__div">
+                      <ul
+                        class="CardSolution__div-text__div__ul-P-M ul-monitor"
+                      >
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          During the event, effective
+                          <strong>monitoring of on-field activities</strong> and
+                          operations is essential, not just to keep
+                          <strong>things running smoothly</strong>, but to
+                          swiftly <strong>spot and tackle issues</strong> as
+                          they emerge. Drawing from the Paris 2024 experience,
+                          Re.Events integrates various tools and data sources to
+                          <strong>deliver real-time information</strong>. This
+                          data is transformed into impactful
+                          <strong>visualizations</strong> that empower
+                          operational teams and executives to support
+                          <strong>efficient decision making</strong>.<br />Some
+                          examples of <strong>key operations</strong> to monitor
+                          during the event :
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>Venue Bump-In progress
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>Event Incidents
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>Arrival and Departure flow
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>Venue Access Control
+                          (spectators and accredited)
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>Workforce Noshow
+                          (volunteers and contractors)
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>Accreditation delivery
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>On Venue Medical care
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>Competition schedule
+                          follow up
+                        </li>
+                        <li class="CardSolution__div-text__div__ul-P-M__li">
+                          <span class="bullet"></span>Transport monitoring
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="CardSolution2 card-4">
+                  <div class="CardSolution__div-text">
+                    <h3 class="CardSolution__div-text__h3 false">
+                      Collect your data
+                    </h3>
+                    <div class="CardSolution__div-text__div">
+                      <p class="CardSolution__div-text__div__p">
+                        In most events, crucial
+                        <strong
+                          >data on actual resource deployment and
+                          utilization</strong
+                        >
+                        is generated in real-time. However, this data often
+                        remains with service providers, and,
+                        <strong
+                          >once the event concludes, is either inaccessible or
+                          permanently lost</strong
+                        >. After the event, obtaining high-quality, standardized
+                        data becomes a significant challenge : especially when
+                        multiple providers are involved, such as food
+                        concessionaires across different venues.
+                      </p>
+                      <br />
+                      <p class="CardSolution__div-text__div__p">
+                        To
+                        <strong>unlock the full potential of event data</strong
+                        >, it is essential to first
+                        <strong>identify</strong> the data to be collected, then
+                        <strong>establish a unified format</strong> across
+                        <strong>all providers</strong> and
+                        <strong>all editions</strong>, ensuring seamless
+                        collection and analysis post-event.
+                      </p>
+                      <br />
+                      <p class="CardSolution__div-text__div__p">
+                        Re.Events offers specialized
+                        <strong>legal expertise</strong> and a
+                        <strong>robust data engineering framework</strong>
+                        designed to capture and retain the most valuable data.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="AboutUs">
+          <h2>About us</h2>
+          <div class="aboutUs__div-parallax">
+            <div class="aboutUs__div-prlx__div-img"></div>
+            <div class="aboutUs__div-prlx__div-text">
+              <h3 class="aboutUs__div-prlx__div-text__h3">
+                We are a dynamic and passionate team of sport amateur and data
+                experts from Paris 2024 Olympic and Paralympic Games committee
+                who are keen to help take event organisations to the next level
+                through data. Combining expertise in sports events, data
+                knowledge, and a passion for emerging technologies enable us to
+                conceive new ways to deliver events
+              </h3>
+            </div>
+          </div>
+          <div class="aboutUs__div-listTeam snaps-inline">
+            <div class="CardProfile">
+              <a
+                href="https://www.linkedin.com/in/kevin-martel-39458210a/"
+                class="CardProfile__a"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Kevin's LinkedIn profile"
+                ><svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="linkedin"
+                  class="svg-inline--fa fa-linkedin CardProfile__a__icon"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                  ></path></svg
+              ></a>
+              <figure class="CardProfile__figure">
+                <img
+                  src="./public/images/Kevin.webp"
+                  alt="Kevin MARTEL"
+                  loading="lazy"
+                  class="CardProfile__figure__img"
+                />
+              </figure>
+              <div class="CardProfile__div-name">
+                <div class="CardProfile__div-name__div-ribbon">
+                  <h3 class="CardProfile__div-name__div-ribbon__h3">
+                    Kevin MARTEL
+                  </h3>
+                </div>
+              </div>
+              <div class="CardProfile__div-infos">
+                <div class="CardProfile__div-infos__div-titles">
+                  <h6 class="CardProfile__div-infos__div-titles__h6">
+                    Founder and CEO of Re.Events
+                  </h6>
+                  <h6 class="CardProfile__div-infos__div-titles__h6">
+                    Sport Events Data Expert
+                  </h6>
+                  <h6 class="CardProfile__div-infos__div-titles__h6">
+                    Former Paris 2024 Games Operations Data Manager
+                  </h6>
+                </div>
+                <p class="CardProfile__div-infos__p">
+                  More than 8 years of experience in data science and
+                  management: Various industries (automative, bank, defense),
+                  International Sport Organisations.
+                </p>
+              </div>
+            </div>
+            <div class="CardProfile">
+              <a
+                href="https://www.linkedin.com/in/amandine-hervy-7b8056165/"
+                class="CardProfile__a"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Amandine's LinkedIn profile"
+                ><svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="linkedin"
+                  class="svg-inline--fa fa-linkedin CardProfile__a__icon"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                  ></path></svg
+              ></a>
+              <figure class="CardProfile__figure">
+                <img
+                  src="./public/images/Amandine.webp"
+                  alt="Amandine HERVY"
+                  loading="lazy"
+                  class="CardProfile__figure__img"
+                />
+              </figure>
+              <div class="CardProfile__div-name">
+                <div class="CardProfile__div-name__div-ribbon">
+                  <h3 class="CardProfile__div-name__div-ribbon__h3">
+                    Amandine HERVY
+                  </h3>
+                </div>
+              </div>
+              <div class="CardProfile__div-infos">
+                <div class="CardProfile__div-infos__div-titles">
+                  <h6 class="CardProfile__div-infos__div-titles__h6">
+                    Operation Data Project Leader
+                  </h6>
+                  <h6 class="CardProfile__div-infos__div-titles__h6">
+                    Sport Events Data Analyst
+                  </h6>
+                  <h6 class="CardProfile__div-infos__div-titles__h6">
+                    Former Paris 2024 Games Operations Data Project Leader
+                  </h6>
+                </div>
+                <p class="CardProfile__div-infos__p">
+                  2 years of experience in planning data management, analysis of
+                  past Games data and data-driven monitoring of operations.
+                </p>
+              </div>
+            </div>
+            <div class="CardProfile">
+              <a
+                href="https://www.linkedin.com/in/axel-brosset/"
+                class="CardProfile__a"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Axel's LinkedIn profile"
+                ><svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fab"
+                  data-icon="linkedin"
+                  class="svg-inline--fa fa-linkedin CardProfile__a__icon"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                  ></path></svg
+              ></a>
+              <figure class="CardProfile__figure">
+                <img
+                  src="./public/images/Axel.webp"
+                  alt="Axel Brosset"
+                  loading="lazy"
+                  class="CardProfile__figure__img"
+                />
+              </figure>
+              <div class="CardProfile__div-name">
+                <div class="CardProfile__div-name__div-ribbon">
+                  <h3 class="CardProfile__div-name__div-ribbon__h3">
+                    Axel Brosset
+                  </h3>
+                </div>
+              </div>
+              <div class="CardProfile__div-infos">
+                <div class="CardProfile__div-infos__div-titles">
+                  <h6 class="CardProfile__div-infos__div-titles__h6">
+                    Sport Events Data Analyst
+                  </h6>
+                  <h6 class="CardProfile__div-infos__div-titles__h6">
+                    Former Paris 2024 Data Analyst
+                  </h6>
+                  <h6 class="CardProfile__div-infos__div-titles__h6"></h6>
+                </div>
+                <p class="CardProfile__div-infos__p">
+                  2 years of experience in data governance and data analysis in
+                  the industry and major events.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="SuccessStories">
+          <div class="SuccessStories__div-titles">
+            <h2 class="SuccessStories__div-titles__h2">Success Stories</h2>
+            <h3 class="SuccessStories__div-titles__h3">
+              Illustrating Our Expertise: Examples of Re.Events Solutions
+            </h3>
+          </div>
+          <div class="SuccessStories__div-cards snaps-inline">
+            <button class="SuccessStories__div-cards__btn btn-left"></button>
+            <div class="CardStory">
+              <div class="CardStory__div-infos">
+                <h4 class="CardStory__div-infos__h4">
+                  <span class="CardStory__div-infos__h4__span">Dashboard</span>
+                  <span class="CardStory__div-infos__h4__span span-height"
+                    >Venue Operation</span
+                  >
+                </h4>
+                <p class="CardStory__div-infos__p-resume">
+                  Thanks to International Olympic Committee and data collected
+                  from Tokyo 2020+1, we collaboratively analyzed egress of main
+                  venues used during the Games and created a tool to empower
+                  business departments extracting participants’ behaviours and
+                  insights to right size their operations. Answering very
+                  specific questions like “How many wheelchair users were on
+                  site at any one time?” but also more global behaviour like
+                  “How long before the competitions do journalists arrive
+                  on-site?”, never before had an Organising Committee been able
+                  to obtain this type of information and this level of
+                  precision.
+                </p>
+                <p class="CardStory__div-infos__p-link">
+                  More
+                  <a
+                    href="https://library.olympics.com/Default/digital-viewer/d-3459598"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Go to artcile about the 'Dashboard Venue Operation' success"
+                    class="CardStory__div-infos__p-link__a"
+                    ><strong>details here</strong></a
+                  >
+                  : page 91
+                </p>
+              </div>
+              <div class="CardStory__div-logo">
+                <img
+                  src="./public/images/icons/P24.webp"
+                  alt="Paris 2024 icon"
+                  loading="lazy"
+                  class="CardStory__div-logo__img"
+                />
+              </div>
+            </div>
+            <div class="CardStory">
+              <div class="CardStory__div-infos">
+                <h4 class="CardStory__div-infos__h4">
+                  <span class="CardStory__div-infos__h4__span">Single</span>
+                  <span class="CardStory__div-infos__h4__span span-height"
+                    >Source of Truth</span
+                  >
+                </h4>
+                <p class="CardStory__div-infos__p-resume">
+                  Organizing an event with more than 50 sports, 40 venues, 25
+                  days of competitions, 14,000 athletes competing and 15 million
+                  of visitors requires effective coordination of the different
+                  operational divisions (transport, security, food and beverage,
+                  catering, logistic, …) by sharing key information and ensuring
+                  a unique reference to keep every division at the same level of
+                  information. From key numbers to very specific information we
+                  gathered, displayed and defined the right governance to ensure
+                  easy access and up to date numbers.
+                </p>
+                <p class="CardStory__div-infos__p-link">
+                  More
+                  <a
+                    href="https://library.olympics.com/Default/digital-viewer/d-3459598"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Go to artcile about the 'Single Source of Truth'"
+                    class="CardStory__div-infos__p-link__a"
+                    ><strong>details here</strong></a
+                  >
+                  : page 82
+                </p>
+              </div>
+              <div class="CardStory__div-logo">
+                <img
+                  src="./public/images/icons/P24.webp"
+                  alt="Paris 2024 icon"
+                  loading="lazy"
+                  class="CardStory__div-logo__img"
+                />
+              </div>
+            </div>
+            <div class="CardStory">
+              <div class="CardStory__div-infos">
+                <h4 class="CardStory__div-infos__h4">
+                  <span class="CardStory__div-infos__h4__span"
+                    >RealTime data</span
+                  >
+                  <span class="CardStory__div-infos__h4__span"
+                    >collection and monitoring Dashboards</span
+                  >
+                </h4>
+                <p class="CardStory__div-infos__p-resume">
+                  During the summer of the Games more than 20 dashboards
+                  developed for the Main Operations Center, the Control Tower,
+                  ensuring smooth running of the Games, supporting decision
+                  making and feeding executives daily report. Ranging from
+                  real-time monitoring of spectator attendance and workforce
+                  no-shows to incident analysis, it gave a visibility rarely
+                  seen in the organization of the Games, appreciated by
+                  executives and recognized by IOC. The main fan zone of the
+                  Games was equipped with best in class and innovative counting
+                  solutions allowing real-time visibility on occupancy. Venue
+                  team and central team used this real-time data to proactively
+                  communicate when venue was nearly crowded to avoid reaching
+                  maximum occupancy and creating spectators’ frustration.
+                </p>
+              </div>
+              <div class="CardStory__div-logo">
+                <img
+                  src="./public/images/icons/P24.webp"
+                  alt="Paris 2024 icon"
+                  loading="lazy"
+                  class="CardStory__div-logo__img"
+                />
+              </div>
+            </div>
+            <button class="SuccessStories__div-cards__btn btn-right"></button>
+          </div>
+        </section>
+        <section id="Contact">
+          <h2 class="Contact__h2">Contact</h2>
+          <div class="Contact__div-content">
+            <div class="Contact__div-content__div-text">
+              <h3 class="Contact__div-content__div-text__h3">
+                Have questions or need more information ?<br />Don’t hesitate to
+                reach out !
+              </h3>
+              <h3 class="Contact__div-content__div-text__h3">
+                Fill out the form on the right and we’ll get back to you as soon
+                as possible.
+              </h3>
+            </div>
+            <form
+              id="form__contact"
+              class="Contact__div-content__form form"
+              data-np-autofill-form-type="identity"
+              data-np-checked="1"
+              data-np-watching="1"
+            >
+              <fieldset class="form__fieldset">
+                <label class="form__fieldset__label" for="firstName"
+                  >First name
+                  <span class="form__fieldset__label__span-required"
+                    >*</span
+                  ></label
+                >
+                <div class="form__fieldset__div-divInputIcon-small">
+                  <div class="form__fieldset__div__div-input-icon">
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      class="form__fieldset__div__div__input"
+                      placeholder="Enter your first name"
+                      required=""
+                      pattern="^[A-Za-z0-9\s_'.,;:œâäàçéèëêîïôöûüù!?\-\(\)°€£$&quot;\/]{3,50}$"
+                      aria-required="true"
+                      aria-invalid="true"
+                      aria-describedby="firstName-help"
+                      aria-label="First name"
+                      minlength="3"
+                      maxlength="50"
+                      value=""
+                      data-np-autofill-field-type="firstName"
+                    />
+                  </div>
+                  <small
+                    id="firstName-help"
+                    class="form__fieldset__div__small-helpMessage"
+                    aria-live="assertive"
+                    >This field is required. The text can only contain lowercase
+                    letters, normal uppercase letters, 'â', 'ä', 'à', 'ç', 'é',
+                    'è', 'ë', 'ê', 'î', 'ï', 'ô', 'ö', 'û', 'ü', 'ù', spaces,
+                    numbers, and symbols: _'.,;:!?-()°€£$".</small
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <label class="form__fieldset__label" for="lastName"
+                  >Last name
+                  <span class="form__fieldset__label__span-required"
+                    >*</span
+                  ></label
+                >
+                <div class="form__fieldset__div-divInputIcon-small">
+                  <div class="form__fieldset__div__div-input-icon">
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      class="form__fieldset__div__div__input"
+                      placeholder="Enter your last name"
+                      required=""
+                      pattern="^[A-Za-z0-9\s_'.,;:œâäàçéèëêîïôöûüù!?\-\(\)°€£$&quot;\/]{3,50}$"
+                      aria-required="true"
+                      aria-invalid="true"
+                      aria-describedby="lastName-help"
+                      aria-label="Last name"
+                      minlength="3"
+                      maxlength="50"
+                      value=""
+                      data-np-autofill-field-type="lastName"
+                    />
+                  </div>
+                  <small
+                    id="lastName-help"
+                    class="form__fieldset__div__small-helpMessage"
+                    aria-live="assertive"
+                    >This field is required. The text can only contain lowercase
+                    letters, normal uppercase letters, 'â', 'ä', 'à', 'ç', 'é',
+                    'è', 'ë', 'ê', 'î', 'ï', 'ô', 'ö', 'û', 'ü', 'ù', spaces,
+                    numbers, and symbols: _'.,;:!?-()°€£$".</small
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <label class="form__fieldset__label" for="email"
+                  >Email
+                  <span class="form__fieldset__label__span-required"
+                    >*</span
+                  ></label
+                >
+                <div class="form__fieldset__div-divInputIcon-small">
+                  <div class="form__fieldset__div__div-input-icon">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form__fieldset__div__div__input"
+                      placeholder="Enter your email address"
+                      required=""
+                      pattern="^[A-Za-z0-9\._%+\-]+@[A-Za-z0-9\.\-]+.[A-Za-z]{2,}$"
+                      aria-required="true"
+                      aria-invalid="true"
+                      aria-describedby="email-help"
+                      aria-label="Email"
+                      minlength="5"
+                      maxlength="150"
+                      value=""
+                      data-np-autofill-field-type="email"
+                    />
+                  </div>
+                  <small
+                    id="email-help"
+                    class="form__fieldset__div__small-helpMessage"
+                    aria-live="assertive"
+                    >This field is required. Your email is invalid. It can only
+                    contain letters, numbers, periods, '-', '+', or '_' (not
+                    contiguous and not directly followed by '@'). It must
+                    include a single '@', a valid domain after '@' (letters,
+                    numbers, and/or periods), and a final extension of at least
+                    2 letters (e.g., '.com', '.fr').</small
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <label class="form__fieldset__label" for="phone"
+                  >Phone number
+                </label>
+                <div class="form__fieldset__div-divInputIcon-small">
+                  <div class="form__fieldset__div__div-input-icon">
+                    <input
+                      type="text"
+                      id="phone"
+                      name="phone"
+                      class="form__fieldset__div__div__input"
+                      placeholder="+00000000000"
+                      pattern="^[0-9+]{8,15}"
+                      inputmode="numeric"
+                      aria-required="false"
+                      aria-invalid="true"
+                      aria-describedby="phone-help"
+                      aria-label="Phone number"
+                      value=""
+                      data-np-autofill-field-type="phone"
+                    />
+                  </div>
+                  <small
+                    id="phone-help"
+                    class="form__fieldset__div__small-helpMessage"
+                    aria-live="assertive"
+                    >Minimum of 8 digits required.</small
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <label class="form__fieldset__label" for="company"
+                  >Company
+                </label>
+                <div class="form__fieldset__div-divInputIcon-small">
+                  <div class="form__fieldset__div__div-input-icon">
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      class="form__fieldset__div__div__input"
+                      placeholder="Enter your company name"
+                      pattern="^[A-Za-z0-9\s_'.,;:œâäàçéèëêîïôöûüù!?\-\(\)°€£$&quot;\/]{3,50}$"
+                      aria-required="false"
+                      aria-invalid="true"
+                      aria-describedby="company-help"
+                      aria-label="Company"
+                      minlength="3"
+                      maxlength="50"
+                      value=""
+                      data-np-intersection-state="visible"
+                    />
+                  </div>
+                  <small
+                    id="company-help"
+                    class="form__fieldset__div__small-helpMessage"
+                    aria-live="assertive"
+                    >The text can only contain lowercase letters, normal
+                    uppercase letters, 'â', 'ä', 'à', 'ç', 'é', 'è', 'ë', 'ê',
+                    'î', 'ï', 'ô', 'ö', 'û', 'ü', 'ù', spaces, numbers, and
+                    symbols: _'.,;:!?-()°€£$".</small
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <label class="form__fieldset__label" for="country"
+                  >Country
+                </label>
+                <div class="form__fieldset__div-divInputIcon-small">
+                  <div class="form__fieldset__div__div-input-icon">
+                    <input
+                      type="text"
+                      id="country"
+                      name="country"
+                      class="form__fieldset__div__div__input"
+                      placeholder="Enter your country"
+                      pattern="^[A-Za-z0-9\s_'.,;:œâäàçéèëêîïôöûüù!?\-\(\)°€£$&quot;\/]{3,50}$"
+                      aria-required="false"
+                      aria-invalid="true"
+                      aria-describedby="country-help"
+                      aria-label="Country"
+                      minlength="3"
+                      maxlength="50"
+                      value=""
+                      data-np-autofill-field-type="country"
+                    />
+                  </div>
+                  <small
+                    id="country-help"
+                    class="form__fieldset__div__small-helpMessage"
+                    aria-live="assertive"
+                    >The text can only contain lowercase letters, normal
+                    uppercase letters, 'â', 'ä', 'à', 'ç', 'é', 'è', 'ë', 'ê',
+                    'î', 'ï', 'ô', 'ö', 'û', 'ü', 'ù', spaces, numbers, and
+                    symbols: _'.,;:!?-()°€£$".</small
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset full-width">
+                <label class="form__fieldset__label" for="subject"
+                  >Subject
+                  <span class="form__fieldset__label__span-required"
+                    >*</span
+                  ></label
+                >
+                <div class="form__fieldset__div-divInputIcon-small">
+                  <div class="form__fieldset__div__div-input-icon">
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      class="form__fieldset__div__div__input"
+                      placeholder="Subject"
+                      required=""
+                      pattern="^[A-Za-z0-9\s_'.,;:œâäàçéèëêîïôöûüù!?\-\(\)°€£$&quot;\/]{3,50}$"
+                      aria-required="true"
+                      aria-invalid="true"
+                      aria-describedby="subject-help"
+                      aria-label="Subject"
+                      minlength="3"
+                      maxlength="50"
+                      value=""
+                      data-np-intersection-state="visible"
+                    />
+                  </div>
+                  <small
+                    id="subject-help"
+                    class="form__fieldset__div__small-helpMessage"
+                    aria-live="assertive"
+                    >This field is required. The text can only contain lowercase
+                    letters, normal uppercase letters, 'â', 'ä', 'à', 'ç', 'é',
+                    'è', 'ë', 'ê', 'î', 'ï', 'ô', 'ö', 'û', 'ü', 'ù', spaces,
+                    numbers, and symbols: _'.,;:!?-()°€£$".</small
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset full-width">
+                <label class="form__fieldset__label" for="message"
+                  >Message
+                  <span class="form__fieldset__label__span-required"
+                    >*</span
+                  ></label
+                >
+                <div class="form__fieldset__div-divInputIcon-small">
+                  <div class="form__fieldset__div__div-input-icon">
+                    <textarea
+                      class="form__fieldset__div__div__textarea invalid"
+                      id="message"
+                      name="message"
+                      placeholder="Enter your message"
+                      required=""
+                      aria-required="true"
+                      aria-describedby="message-help"
+                      aria-invalid="true"
+                      aria-label="Message"
+                    ></textarea>
+                  </div>
+                  <small
+                    id="message-help"
+                    class="form__fieldset__div__small-helpMessage"
+                    aria-live="assertive"
+                    >This field is required. Minimum of 10 characters required.
+                    The text can only contain lowercase letters, normal
+                    uppercase letters, 'â', 'ä', 'à', 'ç', 'é', 'è', 'ë', 'ê',
+                    'î', 'ï', 'ô', 'ö', 'û', 'ü', 'ù', spaces, numbers, and
+                    symbols: _'.,;:!?-()°€£$".</small
+                  >
+                </div>
+              </fieldset>
+              <fieldset class="form__fieldset full-width fieldset-checkbox">
+                <input type="checkbox" id="agree" name="agree" /><label
+                  for="agree"
+                  >I agree to the
+                  <a
+                    aria-label="Go to the personal data processing policy page"
+                    class="form__fieldset__link"
+                    href="/policy"
+                    data-discover="true"
+                    >personal data processing policy</a
+                  >.</label
+                >
+              </fieldset>
+              <button class="form__btn btn disabled" disabled="">
+                Contact us
+              </button>
+            </form>
+          </div>
+        </section>
+      </article>
+      <footer id="Footer">
+        <div class="footer__div-container">
+          <a
+            href="https://www.linkedin.com/company/re-events-org/"
+            class="footer__div__a"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow us on LinkedIn"
+            ><svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fab"
+              data-icon="linkedin"
+              class="svg-inline--fa fa-linkedin footer__div__a__icon"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="currentColor"
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              ></path></svg
+          ></a>
+          <div class="footer__div__div-links">
+            <a
+              class="footer__div__div__a"
+              aria-label="Go to the Legal Notice page"
+              href="/legal"
+              data-discover="true"
+              >Legal Notice</a
+            ><a
+              class="footer__div__div__a"
+              aria-label="Go to the Personal Data Processing Policy page"
+              href="/policy"
+              data-discover="true"
+              >Personal Data Processing Policy</a
+            >
+          </div>
+          <figure class="footer__div__figure-img">
+            <img
+              alt="Logo Re.Events"
+              loading="lazy"
+              class="footer__div__figure__logo"
+            />
+          </figure>
+          <div class="footer__div__div-banner"></div>
+        </div>
+        <p class="footer__p">© 2025 - Re.Events. All rights reserved</p>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menuToggle = document.getElementById("menuToggle");
+        const burger = document.getElementById("burger");
+        const navMenu = document.getElementById("navMenu");
+        const homeButton = document.getElementById("homeButton");
+        const navButtons = document.querySelectorAll(
+          ".header__nav__ul__li__btn-link"
+        );
+
+        menuToggle.addEventListener("click", () => {
+          const isOpen = navMenu.classList.toggle("visible");
+          menuToggle.setAttribute("aria-expanded", isOpen);
+          burger.classList.toggle("menu__open");
+        });
+
+        homeButton.addEventListener("click", () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        navButtons.forEach((button) => {
+          button.addEventListener("click", (event) => {
+            const sectionId = event.target.getAttribute("data-section");
+            const section = document.getElementById(sectionId);
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+            navMenu.classList.remove("visible");
+            menuToggle.setAttribute("aria-expanded", "false");
+          });
+        });
+
+         // Détection de la section active et mise à jour des boutons
+         const sections = document.querySelectorAll("section");
+         const updateActiveSection = () => {
+             let currentSection = "";
+             sections.forEach(section => {
+                 const rect = section.getBoundingClientRect();
+                 if (rect.top <= window.innerHeight / 3 && rect.bottom >= window.innerHeight / 3) {
+                     currentSection = section.id;
+                 }
+             });
+             navButtons.forEach(button => {
+                 button.classList.toggle("active", button.getAttribute("data-section") === currentSection);
+             });
+         };
+
+         window.addEventListener("scroll", updateActiveSection);
+         updateActiveSection(); // Appel initial au chargement
+      });
+    </script>
+  </body>
+</html>
