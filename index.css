@@ -92,7 +92,6 @@ RESET
 html {
   font-size: 62.5%; /* 1rem = 10px */
   scroll-behavior: smooth;
-  height: 100%;
   container-type: inline-size;
   scroll-padding: 10rem;
 }
