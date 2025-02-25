@@ -1211,6 +1211,8 @@
     </div>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+
+        // Header js
         const menuToggle = document.getElementById("menuToggle");
         const burger = document.getElementById("burger");
         const navMenu = document.getElementById("navMenu");
@@ -1241,7 +1243,7 @@
           });
         });
 
-         // Détection de la section active et mise à jour des boutons
+         // Detection of the active section and update of the active button in the navigation
          const sections = document.querySelectorAll("section");
          const updateActiveSection = () => {
              let currentSection = "";
@@ -1257,7 +1259,9 @@
          };
 
          window.addEventListener("scroll", updateActiveSection);
-         updateActiveSection(); // Appel initial au chargement
+         updateActiveSection(); // initial call 
+
+
       });
     </script>
   </body>
