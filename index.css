@@ -118,12 +118,6 @@ body {
   align-items: center;
 }
 
-@supports (-webkit-touch-callout: none) {
-  #root {
-    height: -webkit-fill-available;
-  }
-}
-
 header,
 footer,
 main,
@@ -153,7 +147,6 @@ a:hover {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  color: var(--white1);
 }
 
 a:active,
@@ -400,6 +393,7 @@ small {
   animation: stickyNav linear forwards;
   justify-content: space-between;
   background-color: var(--white1);
+  background-color: #00ff00;
   color: var(--black1);
   padding: 1rem 1.6rem;
 
@@ -534,7 +528,6 @@ small {
   #Header {
     height: 10rem;
     padding: 1rem 3.2rem;
-    background-color: #00ff00;
 
     .header__btn__figure-img {
       width: 8rem;
