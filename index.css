@@ -367,7 +367,7 @@ small {
 /* ************************* HEADER ************************* */
 #Header {
   width: 100%;
-  height: 10rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   position: sticky;
@@ -857,7 +857,234 @@ small {
 
 /* ************************* SOLUTIONS ************************* */
 
+#Solutions {
+  width: 100%;
+  display: grid;
+  background-image: url("/images/bcg.webp");
+
+  color: var(--secondaryBlue);
+}
+h2 {
+  text-align: center;
+  padding: 2.4rem;
+  color: var(--black1);
+}
+
+.solutions-container {
+  padding: 0 0 2.4rem;
+  max-width: 95%;
+  margin: 0 auto;
+}
+.solutions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.solutions-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+  position: relative;
+  max-width: unset;
+}
+
+.solutions-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0.9rem;
+  width: 2px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--primaryBlue),
+    var(--primaryBlue) 5px,
+    transparent 5px,
+    transparent 10px
+  );
+}
+
+.solutions-list li:last-child {
+  margin-bottom: 0;
+}
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid var(--secondaryBlue);
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 2rem;
+  position: relative;
+  margin-top: 0.4rem;
+}
+
+.solutions-list li:not(:last-child) .circle::after {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: calc(100% - 2rem);
+  background-color: var(--primaryBlue);
+}
+
+h3 {
+  margin: 0 0 1rem;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Media queries for Tablet */
+@media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
+  h2 {
+    padding: 3.2rem;
+  }
+}
+
+/* Media queries for Desktop */
+@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+  #Solutions {
+    padding: 0 0 6.4rem;
+  }
+  h2 {
+    padding: 6.4rem;
+  }
+}
+
+.Solutions2 {
+  width: 100%;
+  display: grid;
+  overflow: hidden;
+}
+
+/* Media queries for Desktop */
+@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+  .solutions__div-cards-container {
+    width: 100%;
+    /* background-color: var(--white1); */
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 2rem;
+    position: relative;
+  }
+  .solutions__div-cC__div-cards {
+    overflow-y: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, auto);
+    gap: 4vw;
+    z-index: 1;
+    height: 73rem;
+  }
+  .solutions__div-cC__div-cards::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .solutions__div-cC__div-cards::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .solutions__div-cC__div-cards::-webkit-scrollbar-thumb {
+    background: var(--primaryBlue);
+    border-radius: 100vw;
+  }
+
+  .CardSolution2 {
+    position: sticky;
+    opacity: 0;
+    top: 0;
+  }
+  .CardSolution2.card-0 {
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .CardSolution2.card-1 {
+    z-index: 3;
+    animation: slideUp1 linear both;
+    animation-timeline: scroll();
+    animation-range-start: 0rem;
+    animation-range-end: 10rem;
+  }
+  .CardSolution2.card-2 {
+    z-index: 4;
+    animation: slideUp2 linear both;
+    animation-timeline: scroll();
+    animation-range-start: 25rem;
+    animation-range-end: 25rem;
+  }
+  .CardSolution2.card-3 {
+    z-index: 5;
+    animation: slideUp3 linear both;
+    animation-timeline: scroll();
+    animation-range-start: 50rem;
+    animation-range-end: 60rem;
+  }
+  .CardSolution2.card-4 {
+    z-index: 6;
+    animation: slideUp4 linear both;
+    animation-timeline: scroll();
+    animation-range-start: 75rem;
+    animation-range-end: 85rem;
+  }
+}
+
+@media only screen and /* (1440px <= width) */ (min-width: 1000px) {
+  .solutions__div-cC__div-cards {
+    height: 70rem;
+  }
+}
+
+@media only screen and /* (1440px <= width) */ (min-width: 1120px) {
+  .solutions__div-cC__div-cards {
+    height: 65rem;
+  }
+}
+
+@media only screen and /* (1440px <= width) */ (min-width: 1440px) {
+  .solutions__div-cC__div-cards {
+    height: 62rem;
+  }
+}
+
+@keyframes slideUp1 {
+  to {
+    top: 7rem;
+    opacity: 1;
+  }
+}
+@keyframes slideUp2 {
+  to {
+    top: 14rem;
+    opacity: 1;
+  }
+}
+@keyframes slideUp3 {
+  to {
+    top: 21rem;
+    opacity: 1;
+  }
+}
+@keyframes slideUp4 {
+  to {
+    top: 26rem;
+    opacity: 1;
+  }
+}
+
 /* ************************* ABOUT US ************************* */
+
+
+
 
 /* ************************* SUCCESS STORIES ************************* */
 
