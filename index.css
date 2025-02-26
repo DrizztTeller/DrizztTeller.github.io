@@ -923,7 +923,7 @@ small {
 #Solutions {
   width: 100%;
   display: grid;
-  background-image: url('public/images/bcg.webp');
+  background-image: url("public/images/bcg.webp");
   color: var(--secondaryBlue);
 }
 
@@ -1309,6 +1309,283 @@ picture {
 }
 
 /* ************************* ABOUT US ************************* */
+
+.CardProfile {
+  margin: auto;
+  padding: 2.4rem;
+  position: relative;
+  display: grid;
+  gap: 2.4rem;
+  grid-template-rows: repeat(3, min-content);
+  background-color: var(--primaryBlue);
+  width: 34rem;
+  height: 60.2rem;
+  box-shadow: 0 0 1rem var(--secondaryBlue);
+}
+
+.CardProfile__a {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  color: var(--white0);
+  height: 4.8rem;
+}
+
+.CardProfile__a__icon {
+  height: 4.8rem;
+}
+
+.CardProfile__a:hover {
+  color: var(--secondaryBlue);
+}
+
+.CardProfile__figure {
+  justify-self: center;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+}
+
+.CardProfile__figure__img {
+  border-radius: 50%;
+}
+
+.CardProfile__div-name {
+  position: relative;
+  height: 6.4rem;
+}
+.CardProfile__div-name__div-ribbon {
+  position: absolute;
+  top: 0;
+  left: -2.8rem;
+  width: 34.75rem;
+  padding: 1.6rem 0;
+  background-color: var(--secondaryBlue);
+  color: var(--white1);
+  text-align: center;
+  box-shadow: 0 -0.2rem 1rem hsl(from var(--white0) h s l / 0.5),
+    0 0.2rem 1rem hsl(from var(--white0) h s l / 0.5);
+  z-index: 1;
+  border-right: 1px solid var(--secondaryBlue);
+  border-left: 1px solid var(--secondaryBlue);
+}
+
+.CardProfile__div-name__div-ribbon__h3 {
+  font-family: "Novecento";
+}
+
+.CardProfile__div-name__div-ribbon::before,
+.CardProfile__div-name__div-ribbon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1rem;
+  height: 130%;
+  background-color: var(--secondaryBlue);
+  border-radius: 0 1.2rem 1.2rem 0;
+  z-index: -1;
+}
+
+.CardProfile__div-name__div-ribbon::before {
+  left: -1rem;
+  transform: scaleX(-1);
+}
+
+.CardProfile__div-name__div-ribbon::after {
+  right: -1rem;
+}
+
+.CardProfile__div-infos {
+  display: grid;
+  gap: 2.4rem;
+}
+.CardProfile__div-infos__div-titles {
+  display: grid;
+  gap: 1.2rem;
+}
+.CardProfile__div-infos__div-titles__h6 {
+  text-wrap: pretty;
+  margin-bottom: 0.8rem;
+}
+.CardProfile__div-infos__div-titles__h6:nth-child(3) {
+  height: 4rem;
+}
+
+.CardProfile__div-infos__p {
+  text-align: justify;
+  line-height: 2.4rem;
+}
+
+#AboutUs {
+  --_space: 2.4rem;
+  width: 100%;
+}
+h2 {
+  text-align: center;
+  padding: 2.4rem;
+  background-color: var(--white1);
+  color: var(--black1);
+}
+
+.aboutUs__div-parallax {
+  width: 100%;
+  position: relative;
+  height: 75rem;
+}
+
+.aboutUs__div-prlx__div-img {
+  background-image: url("/images/team1.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75rem;
+  width: 100%;
+}
+
+.aboutUs__div-prlx__div-text {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 2.4rem;
+  color: var(--white1);
+  z-index: 2;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) -0.5%,
+    rgba(0, 0, 0, 0.4) 5%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+.aboutUs__div-prlx__div-text__h3 {
+  font-family: "Novecento";
+  text-align: justify;
+  filter: contrast(200%) drop-shadow(0 0 0.1rem var(--black0));
+}
+
+.aboutUs__div-listTeam {
+  background-color: var(--white1);
+  padding: 2.4rem 0;
+  display: grid;
+  grid-auto-flow: column;
+  gap: calc(var(--_space) * 2);
+  padding: var(--_space);
+  grid-auto-columns: 34rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+.aboutUs__div-listTeam.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_space);
+}
+.aboutUs__div-listTeam.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+.aboutUs__div-listTeam::-webkit-scrollbar {
+  height: 8px;
+}
+
+.aboutUs__div-listTeam::-webkit-scrollbar-track {
+  background: transparent;
+}
+.aboutUs__div-listTeam::-webkit-scrollbar-thumb {
+  background: var(--primaryBlue);
+  border-radius: 100vw;
+}
+
+@keyframes scrollCercle {
+  0% {
+    transform: translateX(0); /* Au début, tout est en place */
+  }
+  100% {
+    transform: translateX(-100%); /* Défilement vers la gauche */
+  }
+}
+
+/* Media queries for Tablet */
+@media only screen and /* (850px <= width < 1440px) */ (min-width: 850px) {
+  h2 {
+    padding: 3.2rem;
+  }
+
+  .aboutUs__div-prlx__div-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.4rem;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) -2%,
+      rgba(0, 0, 0, 0.4) 5%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  }
+  .aboutUs__div-prlx__div-text__h3 {
+    max-width: 65ch;
+  }
+}
+
+/* Media queries for Desktop */
+@media only screen and (min-width: 1120px) {
+  h2 {
+    padding: 6.4rem;
+  }
+
+  .aboutUs__div-parallax {
+    width: 100%;
+    min-height: 75vh;
+    position: relative;
+    z-index: 0;
+    display: grid;
+    grid-template-areas: "stack";
+  }
+  .aboutUs__div-parallax > * {
+    grid-area: stack;
+  }
+
+  .aboutUs__div-prlx__div-img {
+    display: block;
+    /* background-image: url("/images/team1.webp"); */
+    width: 100%;
+  }
+
+  .aboutUs__div-prlx__div-text {
+    --parallax-speed: 20;
+    position: unset;
+    z-index: 4;
+    padding: 3.2rem;
+    color: var(--white1);
+    align-items: end;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 70%,
+      rgba(0, 0, 0, 0.7) 75%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+
+  /* .aboutUs__div-listTeam {
+      --_space: 3.2rem;
+      gap: 7.5rem;
+      place-content: center;
+      grid-auto-columns: 34rem;
+      overflow-x: unset;
+      overscroll-behavior-inline: unset;
+      padding: var(--_space) 0 4rem;
+    } */
+}
+
+@media only screen and (min-width: 1170px) {
+  .aboutUs__div-listTeam {
+    --_space: 3.2rem;
+    gap: 7.5rem;
+    place-content: center;
+    grid-auto-columns: 34rem;
+    overflow-x: unset;
+    overscroll-behavior-inline: unset;
+    padding: var(--_space) 0 4rem;
+  }
+}
 
 /* ************************* SUCCESS STORIES ************************* */
 
