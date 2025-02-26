@@ -1748,7 +1748,7 @@ h2 {
     } */
 }
 
-@media only screen and (min-width: 1120px) {
+@media only screen and (min-width: 1170px) {
   .SuccessStories__div-cards {
     gap: 7.5rem;
     place-content: center;
@@ -1759,6 +1759,9 @@ h2 {
   }
 }
 /* ************************* CONTACT ************************* */
+
+
+
 
 /* ************************* FOOTER ************************* */
 
