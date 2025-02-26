@@ -1309,9 +1309,9 @@
           }
 
           if (isValid) {
-            input.setAttribute('aria-invalid', false);
+            input.setAttribute("aria-invalid", false);
           } else {
-            input.setAttribute('aria-invalid', true);
+            input.setAttribute("aria-invalid", true);
           }
 
           // Deleting existing icons
@@ -1373,7 +1373,7 @@
             }
           });
 
-          const inputAgree = document.getElementById('agree');
+          const inputAgree = document.getElementById("agree");
 
           if (!inputAgree.checked) {
             allValid = false;
@@ -1416,6 +1416,10 @@
 
         // Call updateButtonState initially to set the correct state on page load
         let formIsValid = updateButtonState();
+
+        document
+          .getElementById("agree")
+          .addEventListener("change", updateButtonState);
 
         // Toast functions
         function showToast(message) {
