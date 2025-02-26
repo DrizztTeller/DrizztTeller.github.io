@@ -1515,7 +1515,7 @@ picture {
 }
 .aboutUs__div-listTeam.snaps-inline {
   scroll-snap-type: inline mandatory;
-  scroll-padding-inline: var(--_space);
+  /* scroll-padding-inline: var(--_space); */
 }
 .aboutUs__div-listTeam.snaps-inline > * {
   scroll-snap-align: start;
@@ -1735,7 +1735,7 @@ picture {
 }
 .SuccessStories__div-cards.snaps-inline {
   scroll-snap-type: inline mandatory;
-  scroll-padding-inline: var(--_space);
+  /* scroll-padding-inline: var(--_space); */
 }
 
 .SuccessStories__div-cards.snaps-inline > * {
