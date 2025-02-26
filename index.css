@@ -936,7 +936,7 @@ small {
 #Solutions {
   width: 100%;
   display: grid;
-  background-image: url("public/images/bcg.webp");
+  background-image: url("public/images/bcg.jpg");
   color: var(--secondaryBlue);
 }
 
@@ -1448,7 +1448,7 @@ picture {
 }
 
 .aboutUs__div-prlx__div-img {
-  background-image: url("public/images/team1.webp");
+  background-image: url("public/images/team1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1559,7 +1559,7 @@ picture {
 
   .aboutUs__div-prlx__div-img {
     display: block;
-    /* background-image: url("/images/team1.webp"); */
+    /* background-image: url("/images/team1.jpg"); */
     width: 100%;
   }
 
@@ -1680,7 +1680,7 @@ picture {
 
 #SuccessStories {
   --_space: 2.4rem;
-  background-image: url("./public/images/bcg.webp");
+  background-image: url("./public/images/bcg.jpg");
   width: 100%;
 }
 
@@ -2103,7 +2103,7 @@ input:not(:placeholder-shown):invalid,
   width: 10rem;
 }
 .footer__div__figure__logo {
-  content: url(public/images/icons/logoF-B.webp);
+  content: url(public/images/icons/logoF-B.png);
 }
 
 .footer__div__a {
@@ -2164,7 +2164,7 @@ input:not(:placeholder-shown):invalid,
     padding: 0 6.4rem;
   }
   .footer__div__figure__logo {
-    content: url("public/images/icons/logoF-N.webp");
+    content: url("public/images/icons/logoF-N.png");
   }
 
   .footer__div__div-banner {
