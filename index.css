@@ -1680,7 +1680,7 @@ picture {
 
 #SuccessStories {
   --_space: 2.4rem;
-  background-image: url("/images/bcg.webp");
+  background-image: url("./public/images/bcg.webp");
   width: 100%;
 }
 
