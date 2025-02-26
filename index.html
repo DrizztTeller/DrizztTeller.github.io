@@ -1391,7 +1391,7 @@
           .addEventListener("keyup", handleChange);
 
         // Call updateButtonState initially to set the correct state on page load
-        updateButtonState();
+        let formIsValid = updateButtonState();
 
         // Toast functions
         function showToast(message) {
@@ -1422,8 +1422,9 @@
         const handleSubmit = async (e) => {
           e.preventDefault();
 
+          formIsValid = updateButtonState();
           // Checking all required inputs are completed
-          if (!allValid) {
+          if (!formIsValid) {
             showToast("Please fill in all required fields correctly.");
             return; // Stop the submission if the form is invalid
           }
@@ -1443,7 +1444,7 @@
 
           // Setup to call the api
           const formEndpoint = "https://api.web3forms.com/submit";
-          const accessKey = "YOUR_ACCESS_KEY_HERE";
+          const accessKey = "1e28703b-ce2a-4186-96fc-ce48ca8485f7";
 
           try {
             // Sending data
