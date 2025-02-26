@@ -1317,3 +1317,109 @@ picture {
 /* ************************* CONTACT ************************* */
 
 /* ************************* FOOTER ************************* */
+
+#Footer {
+  width: 100%;
+  background-color: var(--secondaryBlue);
+  color: var(--white1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto 0;
+}
+
+.footer__div-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--black0);
+  padding-right: 1rem;
+}
+.footer__div__div-links {
+  z-index: 2;
+  display: grid;
+  gap: 1.2rem;
+  place-items: center;
+}
+.footer__div__div__a {
+  text-align: center;
+}
+.footer__div__div__a:hover {
+  color: var(--primaryBlue);
+}
+
+.footer__div__figure-img {
+  width: 10rem;
+}
+.footer__div__figure__logo {
+  content: url(public/images/icons/logoF-B.webp);
+}
+
+.footer__div__a {
+  z-index: 2;
+  width: 12rem;
+  height: 12rem;
+  display: grid;
+  place-items: center;
+}
+.footer__div__a__icon {
+  display: block;
+  width: 6rem;
+  height: 6rem;
+}
+
+.footer__div__a:hover .footer__div__a__icon {
+  color: var(--primaryBlue);
+}
+
+.footer__div__div-banner {
+  display: none;
+  background-color: var(--secondaryBlue);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 21.6rem);
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 142.64px) 100%, 0 100%);
+}
+
+.footer__p {
+  max-width: unset;
+  width: 100%;
+  padding: 1.2rem 0;
+  text-align: center;
+  background-color: var(--black1);
+  color: var(--white1);
+}
+
+/* media queries pour Tablette */
+@media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
+  .footer__div-container {
+    padding: 0 3.2rem;
+  }
+  .footer__div__figure-img {
+    width: 12rem;
+  }
+}
+
+/* Media queries for Desktop */
+@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+  #Footer {
+    background-color: var(--white1);
+    color: var(--white1);
+  }
+  .footer__div-container {
+    padding: 0 6.4rem;
+  }
+  .footer__div__figure__logo {
+    content: url("/images/icons/logoF-N.webp");
+  }
+
+  .footer__div__div-banner {
+    display: unset;
+  }
+}
