@@ -1213,6 +1213,11 @@
           reserved
         </p>
       </footer>
+
+      <div id="custom-toast" class="toast">
+        <span id="toast-message"></span>
+        <button id="close-toast" class="close-btn">&times;</button>
+      </div>
     </div>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
@@ -1357,6 +1362,7 @@
             button.setAttribute("disabled", true);
             button.classList.add("disabled");
           }
+          return allValid;
         }
         // Listener for each inputs and for the textarea
         document
@@ -1386,6 +1392,91 @@
 
         // Call updateButtonState initially to set the correct state on page load
         updateButtonState();
+
+        // Toast functions
+        function showToast(message) {
+          const toast = document.getElementById("custom-toast");
+          const toastMessage = document.getElementById("toast-message");
+          const closeButton = document.getElementById("close-toast");
+
+          toastMessage.textContent = message;
+          toast.classList.add("show");
+
+          // Fermer après 10s
+          const timeout = setTimeout(() => {
+            hideToast();
+          }, 10000);
+
+          // Fermer si on clique sur la croix
+          closeButton.onclick = function () {
+            hideToast();
+            clearTimeout(timeout);
+          };
+        }
+
+        function hideToast() {
+          document.getElementById("custom-toast").classList.remove("show");
+        }
+
+        // Submit function
+        const handleSubmit = async (e) => {
+          e.preventDefault();
+
+          // Checking all required inputs are completed
+          if (!allValid) {
+            showToast("Please fill in all required fields correctly.");
+            return; // Stop the submission if the form is invalid
+          }
+
+          // Collecting all data
+          const formData = {
+            firstName: document.getElementById("firstName").value,
+            lastName: document.getElementById("lastName").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            company: document.getElementById("company").value,
+            country: document.getElementById("country").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+            agree: document.getElementById("agree").checked,
+          };
+
+          // Setup to call the api
+          const formEndpoint = "https://api.web3forms.com/submit";
+          const accessKey = "YOUR_ACCESS_KEY_HERE";
+
+          try {
+            // Sending data
+            const response = await fetch(formEndpoint, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ ...formData, access_key: accessKey }),
+            });
+
+            const result = await response.json();
+
+            // feedback
+            if (result.success) {
+              showToast("Your message has been sent successfully!");
+              document.getElementById("form__contact").reset(); //form reset
+              updateButtonState(); // Deactivation of the submit btn
+            } else {
+              // console.error("Web3Forms Error:", result.errors);
+              showToast(
+                "An error occurred while sending your message. Please try again."
+              );
+            }
+          } catch (error) {
+            // console.error("Fetch Error:", error);
+            showToast(
+              "A network error occurred. Please check your connection and try again."
+            );
+          }
+        };
+
+        document
+        .getElementById("form__contact")
+        .addEventListener("submit", handleSubmit);
       });
     </script>
   </body>
