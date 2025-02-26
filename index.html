@@ -1147,8 +1147,8 @@
                   type="checkbox"
                   id="agree"
                   name="agree"
-                  required
                   aria-required="true"
+                  checked
                 /><label for="agree"
                   >I agree to the
                   <a
@@ -1373,6 +1373,12 @@
               allValid = false;
             }
           });
+
+          const inputAgree = document.getElementById('agree');
+
+          if (!inputAgree.checked) {
+            allValid = false;
+          }
 
           if (allValid) {
             button.removeAttribute("disabled");
