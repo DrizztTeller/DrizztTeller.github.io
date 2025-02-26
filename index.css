@@ -627,24 +627,24 @@ small {
     animation-range-start: 35rem;
     animation-range-end: 55rem;
   }
-}
-.header__div-scroll {
-  display: unset;
-  height: 10rem;
-  background-color: var(--secondaryBlue);
-  z-index: 9;
-  position: absolute;
-  width: calc(100% - 17.6rem);
-  scale: 0 1;
-  right: 0;
-  margin-left: 17.6rem;
-  transition: width 0.3s ease;
-  transform-origin: right;
-  animation: scroll-header linear;
-  animation-timeline: scroll();
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 100px 0);
-}
 
+  .header__div-scroll {
+    display: unset;
+    height: 10rem;
+    background-color: var(--secondaryBlue);
+    z-index: 9;
+    position: absolute;
+    width: calc(100% - 17.6rem);
+    scale: 0 1;
+    right: 0;
+    margin-left: 17.6rem;
+    transition: width 0.3s ease;
+    transform-origin: right;
+    animation: scroll-header linear;
+    animation-timeline: scroll();
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 100px 0);
+  }
+}
 @supports not (animation-timeline: scroll()) {
   .header__div-scroll {
     scale: 1 1;
