@@ -530,7 +530,6 @@ small {
     width: unset;
     height: unset;
   }
-  
 
   .header__btn-burger {
     width: 4.8rem;
@@ -1775,8 +1774,295 @@ picture {
 }
 /* ************************* CONTACT ************************* */
 
+.form {
+  display: grid;
+  gap: 2.4rem;
+  padding: 1rem;
+}
 
+input,
+textarea {
+  caret-color: var(--primaryBlue);
+}
 
+input:disabled::placeholder,
+textarea:disabled::placeholder {
+  color: var(--white1);
+}
+
+input:not(:placeholder-shown):valid,
+.valid {
+  transition: outline 0.3s ease;
+  outline: 2px solid var(--green1);
+}
+
+input:not(:placeholder-shown):focus:invalid,
+.invalid:not(:placeholder-shown):focus {
+  transition: outline 0.3s ease;
+  outline: 2px solid var(--warning);
+}
+
+input:not(:placeholder-shown):invalid,
+.invalid:not(:focus):not(:placeholder-shown) {
+  transition: outline 0.3s ease;
+  outline: 2px solid var(--red1);
+}
+
+.form__fieldset {
+  display: grid;
+  border: none;
+  gap: 0.8rem;
+  height: fit-content;
+}
+
+.form__fieldset__label,
+.form__fieldset-ingredients__label,
+.form__fieldset-steps__label {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.form__fieldset__label__span-required {
+  font-size: inherit;
+  color: var(--red1);
+}
+
+.form__fieldset__div-divInputIcon-small {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-rows: auto auto;
+}
+
+.form__fieldset__div__div-input-icon {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.form__fieldset__div__div__input,
+.form__fieldset__div__div__textarea,
+.form__fieldset__select {
+  border: none;
+  box-shadow: 0px 0.4rem 1.4rem rgba(0, 0, 0, 0.09);
+  border-radius: 0.3rem;
+  width: 100%;
+  padding: 1rem;
+  flex-shrink: 1;
+}
+
+.form__fieldset__div__div__input,
+.form__fieldset__select {
+  height: 5.1rem;
+}
+
+.form__fieldset__div__div__textarea {
+  height: 17.4rem;
+}
+
+.form__fieldset__div__div-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  display: none;
+}
+
+.form__fieldset__div__div-icon.icon--invalid {
+  stroke: var(--red1);
+}
+
+.form__fieldset__div__div-icon.icon--valid {
+  stroke: var(--green1);
+}
+
+.form__fieldset__div__div__input:focus:user-invalid ~ .icon--invalid,
+.form__fieldset__div__div__textarea.invalid:focus ~ .icon--invalid {
+  stroke: var(--warning);
+}
+
+.form__fieldset__div__div__input:user-invalid ~ .icon--invalid,
+        /* .form__fieldset__div__div__input:not(:focus):invalid ~ .icon--invalid,*/
+        .form__fieldset__div__div__input:focus:invalid ~ .icon--invalid,  
+        .form__fieldset__div__div__input:focus:user-invalid ~ .icon--invalid,
+        .form__fieldset__div__div__input:user-valid ~ .icon--valid, 
+        .form__fieldset__div__div__textarea.invalid ~ .icon--invalid,
+        .form__fieldset__div__div__textarea.valid ~ .icon--valid {
+  display: unset;
+}
+
+.form__fieldset__div__div__input:placeholder-shown ~ .icon--valid,
+.form__fieldset__div__div__input:placeholder-shown ~ .icon--invalid,
+.form__fieldset__div__div__textarea:placeholder-shown ~ .icon--valid,
+.form__fieldset__div__div__textarea:placeholder-shown ~ .icon--invalid {
+  display: none;
+}
+
+.form__fieldset__div__small-helpMessage {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  text-align: justify;
+  color: var(--black1);
+}
+
+.form__fieldset__div__small-helpMessage.error-msg {
+  color: var(--red1) !important;
+}
+
+.form__fieldset__div__div-input-icon:has(input:placeholder-shown:user-invalid)
+  ~ .form__fieldset__div__small-helpMessage {
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.form__fieldset__div__div-input-icon:focus-within
+  ~ .form__fieldset__div__small-helpMessage,
+.form__fieldset__div__div-input-icon:has(
+    input:focus:placeholder-shown:user-invalid
+  )
+  ~ .form__fieldset__div__small-helpMessage,
+.form__fieldset__div__div-input-icon:has(input:user-invalid)
+  ~ .form__fieldset__div__small-helpMessage,
+.form__fieldset__div__div-input-icon:has(
+    textarea.invalid:not(:placeholder-shown)
+  )
+  ~ .form__fieldset__div__small-helpMessage {
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+}
+
+.form__fieldset__div__div-input-icon:has(input:not(:placeholder-shown):invalid)
+  ~ .form__fieldset__div__small-helpMessage,
+.form__fieldset__div__div-input-icon:has(
+    textarea.invalid:not(:placeholder-shown)
+  )
+  ~ .form__fieldset__div__small-helpMessage {
+  color: var(--red1);
+}
+
+.form__fieldset__div__div-input-icon:has(
+    input:not(:placeholder-shown):focus:invalid
+  )
+  ~ .form__fieldset__div__small-helpMessage,
+.form__fieldset__div__div-input-icon:has(
+    textarea.invalid:not(:placeholder-shown):focus
+  )
+  ~ .form__fieldset__div__small-helpMessage {
+  color: var(--warning);
+}
+
+.form__fieldset__div__div-input-icon:has(input:not(:placeholder-shown):valid)
+  ~ .form__fieldset__div__small-helpMessage,
+.form__fieldset__div__div-input-icon:has(
+    textarea.valid:not(:placeholder-shown):focus
+  )
+  ~ .form__fieldset__div__small-helpMessage {
+  color: var(--green1);
+}
+
+.form__fieldset.full-width {
+  grid-column: 1 / -1;
+}
+
+.form__btn {
+  width: fit-content;
+  margin: 0 auto;
+  grid-column: 1 / -1;
+}
+
+@media only screen and (min-width: 600px) {
+  .form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#Contact {
+  --_space: 2.4rem;
+  background-color: var(--white1);
+}
+.Contact__h2 {
+  text-align: center;
+  padding: var(--_space);
+}
+
+.Contact__div-content {
+  padding: var(--_space);
+  display: flex;
+  gap: var(--_space);
+  align-items: center;
+}
+
+.Contact__div-content__div-text {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--_space);
+  text-align: center;
+  width: 50%;
+}
+
+.Contact__div-content__form {
+  width: 100%;
+  padding: var(--_space);
+  display: grid;
+  gap: var(--_space);
+}
+
+.form__btn {
+  padding: 1.2rem 2rem;
+  width: 14.8rem;
+  font-family: "Source Sans Pro Regular";
+}
+
+.fieldset-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.fieldset-checkbox > input {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-right: 1rem;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.fieldset-checkbox > input:not(:placeholder-shown):valid {
+  outline: none;
+}
+
+.form__fieldset__link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form__fieldset__link:hover {
+  color: var(--primaryBlue);
+}
+
+/* media queries pour Tablette */
+@media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
+  #Contact {
+    --_space: 3.2rem;
+  }
+}
+
+/* Media queries for Desktop */
+@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+  .Contact__h2 {
+    padding: 6.4rem 0 var(--_space);
+  }
+  .Contact__div-content__div-text {
+    display: flex;
+  }
+  .Contact__div-content__form {
+    width: 60%;
+  }
+  .fieldset-checkbox > input {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
 
 /* ************************* FOOTER ************************* */
 
