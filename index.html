@@ -1001,7 +1001,8 @@
                     id="phone-help"
                     class="form__fieldset__div__small-helpMessage"
                     aria-live="assertive"
-                    >Must start with a + and must have a minimum of 8 digits required.</small
+                    >Must start with a + and must have a minimum of 8 digits
+                    required.</small
                   >
                 </div>
               </fieldset>
@@ -1126,6 +1127,7 @@
                       aria-required="true"
                       aria-describedby="message-help"
                       aria-label="Message"
+                      aria-invalid="true"
                     ></textarea>
                   </div>
                   <small
@@ -1141,8 +1143,13 @@
                 </div>
               </fieldset>
               <fieldset class="form__fieldset full-width fieldset-checkbox">
-                <input type="checkbox" id="agree" name="agree" required aria-required="true" /><label
-                  for="agree"
+                <input
+                  type="checkbox"
+                  id="agree"
+                  name="agree"
+                  required
+                  aria-required="true"
+                /><label for="agree"
                   >I agree to the
                   <a
                     aria-label="Go to the personal data processing policy page"
@@ -1291,8 +1298,21 @@
             const pattern =
               /^[A-Za-z0-9\s_'.,;:œâäàçéèëêîïôöûüù!?\-\(\)°€£$"\/]{10,}/;
             isValid = pattern.test(input.value);
+            if (isValid) {
+              input.classList.add("valid");
+              input.classList.remove("invalid");
+            } else {
+              input.classList.remove("valid");
+              input.classList.add("invalid");
+            }
           } else {
             isValid = input.checkValidity();
+          }
+
+          if (isValid) {
+            input.setAttribute('aria-invalid', false);
+          } else {
+            input.setAttribute('aria-invalid', true);
           }
 
           // Deleting existing icons
@@ -1475,8 +1495,8 @@
         };
 
         document
-        .getElementById("form__contact")
-        .addEventListener("submit", handleSubmit);
+          .getElementById("form__contact")
+          .addEventListener("submit", handleSubmit);
       });
     </script>
   </body>
