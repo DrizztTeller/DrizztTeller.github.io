@@ -2162,7 +2162,7 @@ input:not(:placeholder-shown):invalid,
 }
 
 /* media queries pour Tablette */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 850px) {
   .footer__div-container {
     padding: 0 3.2rem;
   }
@@ -2172,7 +2172,7 @@ input:not(:placeholder-shown):invalid,
 }
 
 /* Media queries for Desktop */
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1120px) {
   #Footer {
     background-color: var(--white1);
     color: var(--white1);
