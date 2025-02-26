@@ -1081,10 +1081,175 @@ p {
   }
 }
 
+.CardSolution2 {
+  display: flex;
+  width: 100%;
+  background-color: var(--secondaryBlue);
+  color: var(--white1);
+}
+
+.CardSolution2.CardSolutionType2 {
+  flex-direction: row-reverse;
+  background-color: var(--white1);
+  color: var(--secondaryBlue);
+  border: 4px solid var(--primaryBlue);
+}
+
+.bullet {
+  content: url(public/images/icons/SolutionsVectorRed.svg);
+  margin-top: 0.2rem;
+}
+
+.CardSolution__div-text {
+  padding: 3.2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.CardSolution__div-text__h3 {
+  text-transform: uppercase;
+}
+.CardSolution__div-text__h3.h3Type2 {
+  align-self: flex-end;
+}
+
+.CardSolution__div-text__div {
+  width: 100%;
+  font-size: 1.6rem;
+}
+.CardSolution__div-text__div__div-analyze {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.CardSolution__div-text__div__p {
+  max-width: unset;
+  margin-bottom: 1rem;
+}
+.CardSolution__div-text__div__p__span {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: var(--primaryBlue);
+  font-size: 2.6rem;
+  margin: 1rem 0;
+}
+
+.CardSolution__div-text__div__div-analyze__ul,
+.CardSolution__div-text__div__ul-P-M {
+  display: grid;
+  gap: 1.2rem;
+}
+.CardSolution__div-text__div__div-analyze__ul__li,
+.CardSolution__div-text__div__ul-P-M__li {
+  max-width: unset;
+}
+.CardSolution__div-text__div__div-analyze__ul__li:not(:first-of-type),
+.CardSolution__div-text__div__ul-P-M__li:not(:first-of-type) {
+  display: grid;
+  grid-template-columns: 18px auto;
+  gap: 0.8rem;
+  place-items: flex-start;
+  margin-left: 2.4rem;
+  margin-top: 1.2rem;
+}
+
+/* Media queries for Tablet */
+@media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
+  .CardSolution2 {
+    .CardSolution__div-text {
+      gap: 2.4rem;
+      min-width: 40%;
+
+      .CardSolution__div-text__div {
+        font-size: 1.7rem;
+
+        .CardSolution__div-text__div__p {
+          max-width: unset;
+          .CardSolution__div-text__div__p__span {
+            font-size: 2.9rem;
+          }
+        }
+
+        .CardSolution__div-text__div__div-analyze__ul,
+        .CardSolution__div-text__div__ul-P-M {
+          .CardSolution__div-text__div__ul-P-M__li {
+            max-width: unset;
+          }
+          .CardSolution__div-text__div__div-analyze__ul__li:not(:first-of-type),
+          .CardSolution__div-text__div__ul-P-M__li:not(:first-of-type) {
+            gap: 0.8rem;
+            margin-left: 2.4rem;
+            margin-top: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Media queries for Desktop */
+@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+  .CardSolution2 {
+    border-radius: 2rem;
+    .bullet {
+      margin-top: 0.3rem;
+    }
+
+    .CardSolution__div-text {
+      gap: 2.4rem;
+
+      .CardSolution__div-text__div {
+        font-size: 1.8rem;
+
+        .CardSolution__div-text__div__p {
+          max-width: unset;
+          .CardSolution__div-text__div__p__span {
+            font-size: 3.2rem;
+          }
+        }
+
+        .CardSolution__div-text__div__div-analyze {
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: start;
+        }
+
+        .CardSolution__div-text__div__div-analyze__ul,
+        .CardSolution__div-text__div__ul-P-M {
+          &.ul-monitor {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.2rem;
+          }
+
+          .CardSolution__div-text__div__div-analyze__ul__li:first-of-type,
+          .CardSolution__div-text__div__ul-P-M__li:first-of-type {
+            grid-column: 1/ -1;
+          }
+
+          .CardSolution__div-text__div__div-analyze__ul__li:not(:first-of-type),
+          .CardSolution__div-text__div__ul-P-M__li:not(:first-of-type) {
+            margin-top: unset;
+            gap: 0.8rem;
+          }
+
+          .CardSolution__div-text__div__ul-P-M__li {
+            max-width: unset;
+          }
+
+          .CardSolution__div-text__div__div-analyze__ul__li {
+            max-width: 65ch;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* ************************* ABOUT US ************************* */
-
-
-
 
 /* ************************* SUCCESS STORIES ************************* */
 
