@@ -1434,7 +1434,7 @@ h2 {
 }
 
 .aboutUs__div-prlx__div-img {
-  background-image: url("/images/team1.webp");
+  background-image: url("public/images/team1.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
