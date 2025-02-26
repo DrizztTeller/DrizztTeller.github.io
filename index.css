@@ -384,6 +384,11 @@ small {
   width: 3.2rem;
 }
 
+.header__btn__figure__logo {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
 .header__nav {
   display: none;
   position: absolute;
