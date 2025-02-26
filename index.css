@@ -297,7 +297,7 @@ small {
 }
 
 /* Media queries for Tablet */
-@media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   /* ------------- Font Size --------------- */
   h1 {
     font-size: 3.6rem;
@@ -331,7 +331,7 @@ small {
 }
 
 /* Media queries for Desktop */
-@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+@media only screen and (min-width: 850px) {
   /* ------------- Font Size --------------- */
   h1 {
     font-size: 4rem;
@@ -511,7 +511,7 @@ small {
 }
 
 /* Media queries for Tablet */
-@media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
+@media only screen and (min-width: 850px) {
   #Header {
     height: 10rem;
     padding: 1rem 3.2rem;
@@ -560,7 +560,7 @@ small {
 }
 
 /* Media queries for Desktop */
-@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+@media only screen and (min-width: 1120px) {
   #Header {
     padding: 1rem 6.4rem;
   }
@@ -651,7 +651,7 @@ small {
   }
 }
 
-@media only screen and /* (1440px <= width) */ (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .header__nav__ul__li:nth-of-type(4) button {
     animation-range-start: 50rem;
     animation-range-end: 85rem;
@@ -775,7 +775,7 @@ small {
 }
 
 /* Media queries for Tablet */
-@media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #Hero {
     /* height: 100dvh; */
     height: 120rem;
@@ -793,7 +793,7 @@ small {
 }
 
 /* Media queries for Desktop */
-@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+@media only screen and (min-width: 850px) {
   #Hero {
     position: relative;
     overflow: auto;
@@ -1007,14 +1007,14 @@ p {
 }
 
 /* Media queries for Tablet */
-@media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   h2 {
     padding: 3.2rem;
   }
 }
 
 /* Media queries for Desktop */
-@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+@media only screen and (min-width: 850px) {
   #Solutions {
     padding: 0 0 6.4rem;
   }
@@ -1030,7 +1030,7 @@ p {
 }
 
 /* Media queries for Desktop */
-@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+@media only screen and (min-width: 1120px) {
   .solutions__div-cards-container {
     width: 100%;
     /* background-color: var(--white1); */
@@ -1103,19 +1103,19 @@ p {
   }
 }
 
-@media only screen and /* (1440px <= width) */ (min-width: 1000px) {
+/* @media only screen and (min-width: 1000px) {
   .solutions__div-cC__div-cards {
     height: 70rem;
   }
-}
+} */
 
-@media only screen and /* (1440px <= width) */ (min-width: 1120px) {
+@media only screen and (min-width: 1120px) {
   .solutions__div-cC__div-cards {
     height: 65rem;
   }
 }
 
-@media only screen and /* (1440px <= width) */ (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {
   .solutions__div-cC__div-cards {
     height: 62rem;
   }
@@ -1222,7 +1222,7 @@ p {
 }
 
 /* Media queries for Tablet */
-@media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   .CardSolution__div-text {
     gap: 2.4rem;
     min-width: 40%;
@@ -1250,7 +1250,7 @@ p {
 }
 
 /* Media queries for Desktop */
-@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+@media only screen and (min-width: 850px) {
   .CardSolution2 {
     border-radius: 2rem;
   }
@@ -1397,7 +1397,7 @@ picture {
 }
 
 /* media queries pour Tablette */
-@media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   .footer__div-container {
     padding: 0 3.2rem;
   }
@@ -1407,7 +1407,7 @@ picture {
 }
 
 /* Media queries for Desktop */
-@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+@media only screen and (min-width: 850px) {
   #Footer {
     background-color: var(--white1);
     color: var(--white1);
