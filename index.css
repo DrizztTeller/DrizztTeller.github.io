@@ -1878,7 +1878,7 @@ picture {
     padding: 0 6.4rem;
   }
   .footer__div__figure__logo {
-    content: url("/images/icons/logoF-N.webp");
+    content: url("public/images/icons/logoF-N.webp");
   }
 
   .footer__div__div-banner {
