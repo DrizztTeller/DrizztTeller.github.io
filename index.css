@@ -897,7 +897,7 @@ small {
     width: 60%;
     height: fit-content;
     position: absolute;
-    top: 45%;
+    /* top: 45%; */
     left: 2.4rem;
     transform: translate(0, -50%);
   }
