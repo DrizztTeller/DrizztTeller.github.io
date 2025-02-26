@@ -1223,35 +1223,29 @@ p {
 
 /* Media queries for Tablet */
 @media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
-  .CardSolution2 {
-    .CardSolution__div-text {
-      gap: 2.4rem;
-      min-width: 40%;
+  .CardSolution__div-text {
+    gap: 2.4rem;
+    min-width: 40%;
+  }
+  .CardSolution__div-text__div {
+    font-size: 1.7rem;
+  }
 
-      .CardSolution__div-text__div {
-        font-size: 1.7rem;
+  .CardSolution__div-text__div__p {
+    max-width: unset;
+  }
+  .CardSolution__div-text__div__p__span {
+    font-size: 2.9rem;
+  }
 
-        .CardSolution__div-text__div__p {
-          max-width: unset;
-          .CardSolution__div-text__div__p__span {
-            font-size: 2.9rem;
-          }
-        }
-
-        .CardSolution__div-text__div__div-analyze__ul,
-        .CardSolution__div-text__div__ul-P-M {
-          .CardSolution__div-text__div__ul-P-M__li {
-            max-width: unset;
-          }
-          .CardSolution__div-text__div__div-analyze__ul__li:not(:first-of-type),
-          .CardSolution__div-text__div__ul-P-M__li:not(:first-of-type) {
-            gap: 0.8rem;
-            margin-left: 2.4rem;
-            margin-top: 1.2rem;
-          }
-        }
-      }
-    }
+  .CardSolution__div-text__div__ul-P-M__li {
+    max-width: unset;
+  }
+  .CardSolution__div-text__div__div-analyze__ul__li:not(:first-of-type),
+  .CardSolution__div-text__div__ul-P-M__li:not(:first-of-type) {
+    gap: 0.8rem;
+    margin-left: 2.4rem;
+    margin-top: 1.2rem;
   }
 }
 
@@ -1259,58 +1253,54 @@ p {
 @media only screen and /* (1440px <= width) */ (min-width: 850px) {
   .CardSolution2 {
     border-radius: 2rem;
-    .bullet {
-      margin-top: 0.3rem;
-    }
+  }
+  .bullet {
+    margin-top: 0.3rem;
+  }
 
-    .CardSolution__div-text {
-      gap: 2.4rem;
+  .CardSolution__div-text {
+    gap: 2.4rem;
+  }
+  .CardSolution__div-text__div {
+    font-size: 1.8rem;
+  }
+  .CardSolution__div-text__div__p {
+    max-width: unset;
+  }
+  .CardSolution__div-text__div__p__span {
+    font-size: 3.2rem;
+  }
 
-      .CardSolution__div-text__div {
-        font-size: 1.8rem;
+  .CardSolution__div-text__div__div-analyze {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
 
-        .CardSolution__div-text__div__p {
-          max-width: unset;
-          .CardSolution__div-text__div__p__span {
-            font-size: 3.2rem;
-          }
-        }
+  .CardSolution__div-text__div__div-analyze__ul.ul-monitor,
+  .CardSolution__div-text__div__ul-P-M.ul-monitor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
 
-        .CardSolution__div-text__div__div-analyze {
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: start;
-        }
+  .CardSolution__div-text__div__div-analyze__ul__li:first-of-type,
+  .CardSolution__div-text__div__ul-P-M__li:first-of-type {
+    grid-column: 1/ -1;
+  }
 
-        .CardSolution__div-text__div__div-analyze__ul,
-        .CardSolution__div-text__div__ul-P-M {
-          &.ul-monitor {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.2rem;
-          }
+  .CardSolution__div-text__div__div-analyze__ul__li:not(:first-of-type),
+  .CardSolution__div-text__div__ul-P-M__li:not(:first-of-type) {
+    margin-top: unset;
+    gap: 0.8rem;
+  }
 
-          .CardSolution__div-text__div__div-analyze__ul__li:first-of-type,
-          .CardSolution__div-text__div__ul-P-M__li:first-of-type {
-            grid-column: 1/ -1;
-          }
+  .CardSolution__div-text__div__ul-P-M__li {
+    max-width: unset;
+  }
 
-          .CardSolution__div-text__div__div-analyze__ul__li:not(:first-of-type),
-          .CardSolution__div-text__div__ul-P-M__li:not(:first-of-type) {
-            margin-top: unset;
-            gap: 0.8rem;
-          }
-
-          .CardSolution__div-text__div__ul-P-M__li {
-            max-width: unset;
-          }
-
-          .CardSolution__div-text__div__div-analyze__ul__li {
-            max-width: 65ch;
-          }
-        }
-      }
-    }
+  .CardSolution__div-text__div__div-analyze__ul__li {
+    max-width: 65ch;
   }
 }
 
