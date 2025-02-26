@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Re.Events | Data analysis to reach operational efficiency</title>
     <meta
       name="description"
@@ -17,7 +14,6 @@
     />
     <meta name="author" content="Re.Events" />
     <meta name="robots" content="index, follow" />
-
     <meta
       property="og:title"
       content="Re.Events | Data analysis to reach operational efficiency"
@@ -30,7 +26,6 @@
     <meta property="og:url" content="https://www.re-events.org/" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="public/images/team1.webp" />
-
     <link rel="canonical" href="https://www.re-events.org/" />
     <link
       rel="icon"
@@ -57,7 +52,6 @@
     <link rel="shortcut icon" href="public/images/icons/Favicon.ico" />
     <link rel="apple-touch-icon" href="public/images/icons/faviconApple.png" />
     <meta name="apple-mobile-web-app-title" content="Re.Events" />
-
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
@@ -567,13 +561,16 @@
                   class="CardProfile__figure__img"
                 />
                 <picture>
-                  <source srcset="public/images/Kevin.webp" type="image/webp">
+                  <source srcset="public/images/Kevin.webp" type="image/webp" />
                 </picture>
                 <picture>
-                  <source srcset="public/images/Amandine.webp" type="image/webp">
+                  <source
+                    srcset="public/images/Amandine.webp"
+                    type="image/webp"
+                  />
                 </picture>
                 <picture>
-                  <source srcset="/public/images/Axel.webp" type="image/webp">
+                  <source srcset="/public/images/Axel.webp" type="image/webp" />
                 </picture>
               </figure>
               <div class="CardProfile__div-name">
@@ -1215,12 +1212,14 @@
           </figure>
           <div class="footer__div__div-banner"></div>
         </div>
-        <p class="footer__p">&copy; <span id="footer__span-date"></span> - Re.Events. All rights reserved</p>
+        <p class="footer__p">
+          &copy; <span id="footer__span-date"></span> - Re.Events. All rights
+          reserved
+        </p>
       </footer>
     </div>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
-
         // Header js
         const menuToggle = document.getElementById("menuToggle");
         const burger = document.getElementById("burger");
@@ -1252,27 +1251,33 @@
           });
         });
 
-         // Detection of the active section and update of the active button in the navigation
-         const sections = document.querySelectorAll("section");
-         const updateActiveSection = () => {
-             let currentSection = "";
-             sections.forEach(section => {
-                 const rect = section.getBoundingClientRect();
-                 if (rect.top <= window.innerHeight / 3 && rect.bottom >= window.innerHeight / 3) {
-                     currentSection = section.id;
-                 }
-             });
-             navButtons.forEach(button => {
-                 button.classList.toggle("active", button.getAttribute("data-section") === currentSection);
-             });
-         };
+        // Detection of the active section and update of the active button in the navigation
+        const sections = document.querySelectorAll("section");
+        const updateActiveSection = () => {
+          let currentSection = "";
+          sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (
+              rect.top <= window.innerHeight / 3 &&
+              rect.bottom >= window.innerHeight / 3
+            ) {
+              currentSection = section.id;
+            }
+          });
+          navButtons.forEach((button) => {
+            button.classList.toggle(
+              "active",
+              button.getAttribute("data-section") === currentSection
+            );
+          });
+        };
 
-         window.addEventListener("scroll", updateActiveSection);
-         updateActiveSection(); // initial call 
-         
+        window.addEventListener("scroll", updateActiveSection);
+        updateActiveSection(); // initial call
 
-         // Footer date 
-         document.getElementById("footer__span-date").textContent = new Date().getFullYear();
+        // Footer date
+        document.getElementById("footer__span-date").textContent =
+          new Date().getFullYear();
       });
     </script>
   </body>
