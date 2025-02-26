@@ -1219,7 +1219,7 @@
         </p>
       </footer>
 
-      <div id="custom-toast" class="toast">
+      <div id="custom-toast" class="toast show">
         <span id="toast-message"></span>
         <button id="close-toast" class="close-btn">&times;</button>
       </div>
@@ -1445,6 +1445,10 @@
         function hideToast() {
           document.getElementById("custom-toast").classList.remove("show");
         }
+
+        document
+          .getElementById("close-toast")
+          .addEventListener("click", hideToast());
 
         // Submit function
         const handleSubmit = async (e) => {
