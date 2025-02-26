@@ -1275,7 +1275,6 @@
         document.getElementById("footer__span-date").textContent =
           new Date().getFullYear();
 
-
         // Function to add icon depending on status of the inputs
         function handleChange(event) {
           const input = event.target;
@@ -1329,8 +1328,36 @@
           }
 
           parentDiv.appendChild(svg);
+          updateButtonState(); // Call updateButtonState after each change
         }
 
+        function updateButtonState() {
+          const requiredFields = document.querySelectorAll("[required]");
+          const button = document.querySelector(".form__btn");
+
+          let allValid = true;
+          requiredFields.forEach((field) => {
+            if (!field.value) {
+              allValid = false;
+            } else if (field.id === "message") {
+              const pattern =
+                /^[A-Za-z0-9\s_'.,;:œâäàçéèëêîïôöûüù!?\-\(\)°€£$"\/]{10,}/;
+              if (!pattern.test(field.value)) {
+                allValid = false;
+              }
+            } else if (!field.checkValidity()) {
+              allValid = false;
+            }
+          });
+
+          if (allValid) {
+            button.removeAttribute("disabled");
+            button.classList.remove("disabled");
+          } else {
+            button.setAttribute("disabled", true);
+            button.classList.add("disabled");
+          }
+        }
         // Listener for each inputs and for the textarea
         document
           .getElementById("firstName")
@@ -1356,6 +1383,9 @@
         document
           .getElementById("message")
           .addEventListener("keyup", handleChange);
+
+        // Call updateButtonState initially to set the correct state on page load
+        updateButtonState();
       });
     </script>
   </body>
