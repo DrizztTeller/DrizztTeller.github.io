@@ -716,24 +716,24 @@ small {
 #Hero {
   position: relative;
   width: 100%;
-  height: 80dvh;
+  height: 40dvh;
   /* height: 40rem; */
 }
 .hero__div-container {
   width: 100%;
   /* height: 40rem; */
-  height: 80dvh;
+  height: 40dvh;
 }
 .hero__div-c__div-mask {
   width: 100%;
   /* height: 40rem; */
-  height: 80dvh;
+  height: 40dvh;
   z-index: 10;
 }
 .hero__div-c__div-mask__div-img {
   width: 100%;
   /* height: 40rem; */
-  height: 80dvh;
+  height: 40dvh;
   background-image: url(public/images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -796,7 +796,7 @@ small {
 
 /* Media queries for Tablet */
 @media only screen and (min-width: 850px) {
-  #Hero {
+  #Hero,.hero__div-container, .hero__div-c__div-mask, .hero__div-c__div-mask__div-img {
     /* height: 120rem; */
     height: 100dvh;
   }
