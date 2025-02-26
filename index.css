@@ -1588,7 +1588,174 @@ h2 {
 }
 
 /* ************************* SUCCESS STORIES ************************* */
+.CardStory {
+  width: 34rem;
+  height: 54rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem var(--black1);
+}
 
+.CardStory__div-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 2.4rem;
+  background-color: var(--primaryBlue);
+  color: var(--black1);
+  width: 100%;
+  height: 43.2rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.CardStory__div-infos__h4 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.span-height {
+  height: 4.4rem;
+}
+
+.CardStory__div-infos__p-resume {
+  text-align: left;
+  overflow: auto;
+  padding: 0 0.4rem;
+  height: 23.133rem;
+}
+.CardStory__div-infos__p-resume::-webkit-scrollbar {
+  width: 4px;
+}
+.CardStory__div-infos__p-resume::-webkit-scrollbar-track {
+  background: transparent;
+}
+.CardStory__div-infos__p-resume::-webkit-scrollbar-thumb {
+  background: var(--secondaryBlue);
+  border-radius: 100vw;
+}
+
+.CardStory__div-infos__p-link__a {
+  text-decoration: underline;
+  transition: all ease-in-out 0.3s;
+}
+
+.CardStory__div-infos__p-link__a:hover {
+  color: var(--white1);
+}
+
+.CardStory__div-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondaryBlue);
+  height: 10.8rem;
+  width: 100%;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.CardStory__div-logo__img {
+  object-fit: contain;
+}
+
+/* Media queries for Desktop */
+@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+  .CardStory__div-infos {
+    gap: 2.4rem;
+    padding: 3.2rem;
+  }
+}
+
+#SuccessStories {
+  --_space: 2.4rem;
+  background-image: url("/images/bcg.webp");
+  width: 100%;
+}
+.SuccessStories__div-titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: var(--_space) 0 0;
+}
+.SuccessStories__div-titles__h3 {
+  text-align: center;
+  font-family: "Novecento";
+}
+
+.SuccessStories__div-cards {
+  display: grid;
+  grid-auto-flow: column;
+  gap: calc(var(--_space) * 2);
+  padding: var(--_space);
+  grid-auto-columns: 34rem;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+.SuccessStories__div-cards.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_space);
+}
+
+.SuccessStories__div-cards.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+.SuccessStories__div-cards::-webkit-scrollbar {
+  height: 8px;
+}
+
+.SuccessStories__div-cards::-webkit-scrollbar-track {
+  background: transparent;
+}
+.SuccessStories__div-cards::-webkit-scrollbar-thumb {
+  background: var(--primaryBlue);
+  border-radius: 100vw;
+}
+
+.SuccessStories__div-cards__btn {
+  display: none;
+}
+
+/* Media queries for Tablet */
+@media only screen and /* (850px <= width < 1440px) */ (min-width: 600px) {
+  #SuccessStories {
+    --_space: 4.8rem;
+  }
+  .SuccessStories__div-titles {
+    gap: 2.4rem;
+  }
+}
+
+/* Media queries for Desktop */
+@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+  #SuccessStories {
+    --_space: 3.2rem;
+  }
+  .SuccessStories__div-titles {
+    gap: var(--_space);
+    padding: 6.4rem 0 var(--_space);
+  }
+  /* 
+    .SuccessStories__div-cards {
+      gap: 7.5rem;
+      place-content: center;
+      grid-auto-columns: 34rem;
+      overflow-x: unset;
+      overscroll-behavior-inline: unset;
+      padding: 0 0 4rem;
+    } */
+}
+
+@media only screen and /* (1440px <= width) */ (min-width: 850px) {
+  .SuccessStories__div-cards {
+    gap: 7.5rem;
+    place-content: center;
+    grid-auto-columns: 34rem;
+    overflow-x: unset;
+    overscroll-behavior-inline: unset;
+    padding: 0 0 4rem;
+  }
+}
 /* ************************* CONTACT ************************* */
 
 /* ************************* FOOTER ************************* */
