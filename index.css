@@ -775,7 +775,7 @@ small {
 }
 
 /* Media queries for Tablet */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 850px) {
   #Hero {
     /* height: 100dvh; */
     height: 120rem;
@@ -793,7 +793,7 @@ small {
 }
 
 /* Media queries for Desktop */
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 1120px) {
   #Hero {
     position: relative;
     overflow: auto;
@@ -807,9 +807,7 @@ small {
   .hero__div-container {
     /* height: 160dvh; */
     /* height: 120rem; */
-    /* background-color: rgb(0, 0, 0); */
     background-color: rgba(0, 0, 0, 0.5);
-    /* opacity: 0.9; */
     z-index: 10;
     backdrop-filter: blur(50px);
     width: 100%;
