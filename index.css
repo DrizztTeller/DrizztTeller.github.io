@@ -751,7 +751,7 @@ small {
   width: 90%;
   height: fit-content;
   position: absolute;
-  top: clamp(15%, 15vw, 50%);
+  top: 50%;
   left: 2.4rem;
 }
 .hero__div-c__div-mask__div-img__div-text__h2 {
