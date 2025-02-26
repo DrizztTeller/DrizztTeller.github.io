@@ -526,6 +526,12 @@ small {
     width: 8rem;
   }
 
+  .header__btn__figure__logo {
+    width: unset;
+    height: unset;
+  }
+  
+
   .header__btn-burger {
     width: 4.8rem;
     height: 4.8rem;
