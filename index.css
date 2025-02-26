@@ -923,7 +923,7 @@ small {
 #Solutions {
   width: 100%;
   display: grid;
-  background-image: url(./public/images/bcg.webp);
+  background-image: url('public/images/bcg.webp');
   color: var(--secondaryBlue);
 }
 
@@ -931,7 +931,6 @@ h2 {
   text-align: center;
   padding: 2.4rem;
   color: var(--black1);
-  color: var(--primaryBlue);
 }
 
 .solutions-container {
