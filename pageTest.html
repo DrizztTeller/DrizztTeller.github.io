@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synchronisation de Scroll</title>
+    <style>
+        body {
+            height: 200vh; /* Pour simuler une page longue */
+        }
+
+        .section {
+            height: 500px;
+            overflow-y: auto;
+            background: lightgray;
+            margin-top: 100px;
+        }
+
+        .section-content {
+            height: 1000px;
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="section-content">
+            <!-- Contenu de la section -->
+            <h2>Contenu de la section à scroller</h2>
+            <p>Défilez ici pour voir plus de contenu.</p>
+        </div>
+    </div>
+
+    <script>
+        const section = document.querySelector('.Solutions2');
+        const body = document.body;
+        
+        let isScrollingSection = false;
+        
+        // Détecter quand la section devient visible dans la fenêtre
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    isScrollingSection = true;
+                } else {
+                    isScrollingSection = false;
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        observer.observe(section);
+
+        // Synchroniser les scrolls
+        let scrollPosition = 0;
+
+        window.addEventListener('wheel', (event) => {
+            if (isScrollingSection) {
+                const sectionHeight = section.scrollHeight;
+                const sectionScrollHeight = section.scrollTop + section.clientHeight;
+                
+                if (event.deltaY > 0 && sectionScrollHeight < sectionHeight) {
+                    // L'utilisateur scroll vers le bas dans la section
+                    section.scrollTop += event.deltaY;
+                } else if (event.deltaY < 0 && section.scrollTop > 0) {
+                    // L'utilisateur scroll vers le haut dans la section
+                    section.scrollTop += event.deltaY;
+                } else {
+                    // La section est à son début ou à sa fin, on scroll la page principale
+                    window.scrollBy(0, event.deltaY);
+                }
+                event.preventDefault(); // Empêche le scroll de la page principale si dans la section
+            } else {
+                // La section n'est pas visible, scroll de la page principale
+                window.scrollBy(0, event.deltaY);
+            }
+        });
+    </script>
+</body>
+</html>
